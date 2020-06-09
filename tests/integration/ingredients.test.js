@@ -1,40 +1,40 @@
 const mongoose = require("mongoose");
 const request = require("supertest");
-const { Cocktail } = require("../../models/cocktail");
+const { Ingredient } = require("../../models/ingredient");
 
 let server;
 
-describe("/api/cocktails", () => {
+describe("/api/ingredients", () => {
   beforeEach(() => (server = require("../../index")));
   afterEach(async () => {
-    await Cocktail.deleteMany({});
+    await Ingredient.deleteMany({});
     await server.close();
   });
 
   describe("GET /", () => {
-    it("should return all cocktails", async () => {
-      const cocktails = [{ name: "cocktail1" }, { name: "cocktail2" }];
-      await Cocktail.collection.insertMany(cocktails);
-      const res = await request(server).get("/api/cocktails");
+    it("should return all ingredients", async () => {
+      const ingredients = [{ name: "ingredient1" }, { name: "ingredient2" }];
+      await Ingredient.collection.insertMany(ingredients);
+      const res = await request(server).get("/api/ingredients");
       expect(res.status).toBe(200);
       expect(res.body.length).toBe(2);
-      expect(res.body.some((g) => g.name === "cocktail1")).toBeTruthy();
-      expect(res.body.some((g) => g.name === "cocktail2")).toBeTruthy();
+      expect(res.body.some((g) => g.name === "ingredient1")).toBeTruthy();
+      expect(res.body.some((g) => g.name === "ingredient2")).toBeTruthy();
     });
   });
 
   describe("GET /:id", () => {
-    let cocktail;
+    let ingredient;
     let id;
 
     const exec = () => {
-      return request(server).get(`/api/cocktails/${id}`);
+      return request(server).get(`/api/ingredients/${id}`);
     };
 
     beforeEach(async () => {
-      cocktail = new Cocktail({ name: "cocktail1" });
-      await cocktail.save();
-      id = cocktail._id;
+      ingredient = new Ingredient({ name: "ingredient1" });
+      await ingredient.save();
+      id = ingredient._id;
     });
 
     it("should return 404 if ID is invalid", async () => {
@@ -43,7 +43,7 @@ describe("/api/cocktails", () => {
       expect(res.status).toBe(404);
     });
 
-    it("should return 404 if cocktail with given ID was not found", async () => {
+    it("should return 404 if ingredient with given ID was not found", async () => {
       id = mongoose.Types.ObjectId();
       const res = await exec();
       expect(res.status).toBe(404);
@@ -54,10 +54,10 @@ describe("/api/cocktails", () => {
       expect(res.status).toBe(200);
     });
 
-    it("should return the Cocktail Object if input is valid", async () => {
+    it("should return the Ingredient Object if input is valid", async () => {
       const res = await exec();
-      expect(res.body).toHaveProperty("_id", cocktail._id.toHexString());
-      expect(res.body).toHaveProperty("name", cocktail.name);
+      expect(res.body).toHaveProperty("_id", ingredient._id.toHexString());
+      expect(res.body).toHaveProperty("name", ingredient.name);
     });
   });
 
@@ -68,7 +68,7 @@ describe("/api/cocktails", () => {
     const exec = () => {
       return (
         request(server)
-          .post("/api/cocktails")
+          .post("/api/ingredients")
           // .set("x-auth-token", token)
           .send({ name })
       );
@@ -76,7 +76,7 @@ describe("/api/cocktails", () => {
 
     beforeEach(() => {
       //   token = new User().generateAuthToken();
-      name = "cocktail1";
+      name = "ingredient1";
     });
 
     // it("should return 401 if user is not logged in", async () => {
@@ -85,22 +85,22 @@ describe("/api/cocktails", () => {
     //   expect(res.status).toBe(401);
     // });
 
-    it("should return 400 if cocktail name is shorter than 3 characters", async () => {
+    it("should return 400 if ingredient name is shorter than 3 characters", async () => {
       name = "co";
       const res = await exec();
       expect(res.status).toBe(400);
     });
 
-    it("should return 400 if cocktail name is longer than 50 characters", async () => {
+    it("should return 400 if ingredient name is longer than 50 characters", async () => {
       name = new Array(52).join("c");
       const res = await exec();
       expect(res.status).toBe(400);
     });
 
-    it("should save the cocktail if it is valid", async () => {
+    it("should save the ingredient if it is valid", async () => {
       await exec();
-      const cocktail = await Cocktail.find({ name: "cocktail1" });
-      expect(cocktail).not.toBeNull();
+      const ingredient = await Ingredient.find({ name: "ingredient1" });
+      expect(ingredient).not.toBeNull();
     });
 
     it("should return 200 if it is valid", async () => {
@@ -108,32 +108,32 @@ describe("/api/cocktails", () => {
       expect(res.status).toBe(200);
     });
 
-    it("should return the new cocktail if it is valid", async () => {
+    it("should return the new ingredient if it is valid", async () => {
       const res = await exec();
       expect(res.body).toHaveProperty("_id");
-      expect(res.body).toHaveProperty("name", "cocktail1");
+      expect(res.body).toHaveProperty("name", "ingredient1");
     });
   });
 
   describe("PUT /:id", () => {
     // let token;
     let newName;
-    let cocktail;
+    let ingredient;
     let id;
 
     const exec = () => {
       return (
         request(server)
-          .put(`/api/cocktails/${id}`)
+          .put(`/api/ingredients/${id}`)
           // .set("x-auth-token", token)
           .send({ name: newName })
       );
     };
 
     beforeEach(async () => {
-      cocktail = new Cocktail({ name: "cocktail1" });
-      await cocktail.save();
-      id = cocktail._id;
+      ingredient = new Ingredient({ name: "ingredient1" });
+      await ingredient.save();
+      id = ingredient._id;
       // token = new User().generateAuthToken();
       newName = "updatedName";
     });
@@ -150,19 +150,19 @@ describe("/api/cocktails", () => {
       expect(res.status).toBe(404);
     });
 
-    it("should return 404 if cocktail with given ID was not found", async () => {
+    it("should return 404 if ingredient with given ID was not found", async () => {
       id = mongoose.Types.ObjectId();
       const res = await exec();
       expect(res.status).toBe(404);
     });
 
-    it("should return 400 if cocktail name is shorter than 3 characters", async () => {
+    it("should return 400 if ingredient name is shorter than 3 characters", async () => {
       newName = "co";
       const res = await exec();
       expect(res.status).toBe(400);
     });
 
-    it("should return 400 if cocktail name is longer than 50 characters", async () => {
+    it("should return 400 if ingredient name is longer than 50 characters", async () => {
       newName = new Array(52).join("c");
       const res = await exec();
       expect(res.status).toBe(400);
@@ -173,38 +173,38 @@ describe("/api/cocktails", () => {
       expect(res.status).toBe(200);
     });
 
-    it("should update the cocktail if it is valid", async () => {
+    it("should update the ingredient if it is valid", async () => {
       await exec();
-      const updatedCocktail = await Cocktail.findById(id);
-      expect(updatedCocktail.name).toBe(newName);
+      const updatedIngredient = await Ingredient.findById(id);
+      expect(updatedIngredient.name).toBe(newName);
     });
 
-    it("should return the updated cocktail", async () => {
+    it("should return the updated ingredient", async () => {
       const res = await exec();
       expect(res.status).toBe(200);
-      expect(res.body).toHaveProperty("_id", cocktail._id.toHexString());
+      expect(res.body).toHaveProperty("_id", ingredient._id.toHexString());
       expect(res.body).toHaveProperty("name", newName);
     });
   });
 
   describe("DELETE /:id", () => {
     // let token;
-    let cocktail;
+    let ingredient;
     let id;
 
     const exec = () => {
       return (
         request(server)
-          .delete(`/api/cocktails/${id}`)
+          .delete(`/api/ingredients/${id}`)
           // .set("x-auth-token", token)
           .send()
       );
     };
 
     beforeEach(async () => {
-      cocktail = new Cocktail({ name: "cocktail1" });
-      await cocktail.save();
-      id = cocktail._id;
+      ingredient = new Ingredient({ name: "ingredient1" });
+      await ingredient.save();
+      id = ingredient._id;
       // token = new User({ isAdmin: true }).generateAuthToken();
     });
 
@@ -226,7 +226,7 @@ describe("/api/cocktails", () => {
       expect(res.status).toBe(404);
     });
 
-    it("should return 404 if cocktail with given ID was not found", async () => {
+    it("should return 404 if ingredient with given ID was not found", async () => {
       id = mongoose.Types.ObjectId();
       const res = await exec();
       expect(res.status).toBe(404);
@@ -237,17 +237,17 @@ describe("/api/cocktails", () => {
       expect(res.status).toBe(200);
     });
 
-    it("should delete the cocktail if it is valid", async () => {
+    it("should delete the ingredient if it is valid", async () => {
       await exec();
-      const cocktailInDb = await Cocktail.findById(id);
-      expect(cocktailInDb).toBeNull();
+      const ingredientInDb = await Ingredient.findById(id);
+      expect(ingredientInDb).toBeNull();
     });
 
-    it("should return the deleted cocktail", async () => {
+    it("should return the deleted ingredient", async () => {
       const res = await exec();
       expect(res.status).toBe(200);
-      expect(res.body).toHaveProperty("_id", cocktail._id.toHexString());
-      expect(res.body).toHaveProperty("name", cocktail.name);
+      expect(res.body).toHaveProperty("_id", ingredient._id.toHexString());
+      expect(res.body).toHaveProperty("name", ingredient.name);
     });
   });
 });

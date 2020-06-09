@@ -33,10 +33,7 @@ router.put(
       { new: true }
     );
 
-    if (!cocktail)
-      return res
-        .status(404)
-        .send("The cocktail with the given ID was not found.");
+    if (!cocktail) return res.status(404).send("Cocktail not found");
 
     res.send(cocktail);
   }
@@ -45,10 +42,7 @@ router.put(
 router.delete("/:id", validateObjectId, async (req, res) => {
   const cocktail = await Cocktail.findByIdAndRemove(req.params.id);
 
-  if (!cocktail)
-    return res
-      .status(404)
-      .send("The cocktail with the given ID was not found.");
+  if (!cocktail) return res.status(404).send("Cocktail not found");
 
   res.send(cocktail);
 });
