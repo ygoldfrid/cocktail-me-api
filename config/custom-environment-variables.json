@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "cocktailme_jwtPrivateKey",
+  "db": "cocktailme_db"
+}

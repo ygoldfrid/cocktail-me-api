@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "fakePrivateKey",
+  "db": "mongodb://localhost/cocktailme_tests"
+}
