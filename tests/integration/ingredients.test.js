@@ -32,7 +32,7 @@ describe("/api/ingredients", () => {
     };
 
     beforeEach(async () => {
-      ingredient = new Ingredient({ name: "ingredient1" });
+      ingredient = new Ingredient({ name: "ingredient1", measure: "m" });
       await ingredient.save();
       id = ingredient._id;
     });
@@ -64,19 +64,21 @@ describe("/api/ingredients", () => {
   describe("POST /", () => {
     // let token;
     let name;
+    let measure;
 
     const exec = () => {
       return (
         request(server)
           .post("/api/ingredients")
           // .set("x-auth-token", token)
-          .send({ name })
+          .send({ name, measure })
       );
     };
 
     beforeEach(() => {
       //   token = new User().generateAuthToken();
       name = "ingredient1";
+      measure = "m";
     });
 
     // it("should return 401 if user is not logged in", async () => {
@@ -118,6 +120,7 @@ describe("/api/ingredients", () => {
   describe("PUT /:id", () => {
     // let token;
     let newName;
+    let newMeasure;
     let ingredient;
     let id;
 
@@ -126,16 +129,19 @@ describe("/api/ingredients", () => {
         request(server)
           .put(`/api/ingredients/${id}`)
           // .set("x-auth-token", token)
-          .send({ name: newName })
+          .send({ name: newName, measure: newMeasure })
       );
     };
 
     beforeEach(async () => {
-      ingredient = new Ingredient({ name: "ingredient1" });
-      await ingredient.save();
+      ingredient = await new Ingredient({
+        name: "ingredient1",
+        measure: "m",
+      }).save();
       id = ingredient._id;
       // token = new User().generateAuthToken();
       newName = "updatedName";
+      newMeasure = "updatedMeasure";
     });
 
     // it("should return 401 if user is not logged in", async () => {
@@ -202,8 +208,10 @@ describe("/api/ingredients", () => {
     };
 
     beforeEach(async () => {
-      ingredient = new Ingredient({ name: "ingredient1" });
-      await ingredient.save();
+      ingredient = await new Ingredient({
+        name: "ingredient1",
+        measure: "m",
+      }).save();
       id = ingredient._id;
       // token = new User({ isAdmin: true }).generateAuthToken();
     });

@@ -10,7 +10,10 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", validateBody(validateIngredient), async (req, res) => {
-  const ingredient = new Ingredient({ name: req.body.name });
+  const ingredient = new Ingredient({
+    name: req.body.name,
+    measure: req.body.measure,
+  });
   await ingredient.save();
 
   res.status(200).send(ingredient);
@@ -29,7 +32,7 @@ router.put(
   async (req, res) => {
     const ingredient = await Ingredient.findByIdAndUpdate(
       req.params.id,
-      { name: req.body.name },
+      { name: req.body.name, measure: req.body.measure },
       { new: true }
     );
 

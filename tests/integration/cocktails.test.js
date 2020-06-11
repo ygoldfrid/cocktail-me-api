@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const request = require("supertest");
 const { Cocktail } = require("../../models/cocktail");
+const { Ingredient } = require("../../models/ingredient");
 
 let server;
 
@@ -8,6 +9,7 @@ describe("/api/cocktails", () => {
   beforeEach(() => (server = require("../../index")));
   afterEach(async () => {
     await Cocktail.deleteMany({});
+    await Ingredient.deleteMany({});
     await server.close();
   });
 
@@ -64,19 +66,32 @@ describe("/api/cocktails", () => {
   describe("POST /", () => {
     // let token;
     let name;
+    let components;
 
     const exec = () => {
       return (
         request(server)
           .post("/api/cocktails")
           // .set("x-auth-token", token)
-          .send({ name })
+          .send({ name, components })
       );
     };
 
-    beforeEach(() => {
+    beforeEach(async () => {
       //   token = new User().generateAuthToken();
       name = "cocktail1";
+      const ingredient1 = await new Ingredient({
+        name: "ingredient1",
+        measure: "ml",
+      }).save();
+      const ingredient2 = await new Ingredient({
+        name: "ingredient2",
+        measure: "units",
+      }).save();
+      components = [
+        { ingredientId: ingredient1._id, quantity: 1 },
+        { ingredientId: ingredient2._id, quantity: 1 },
+      ];
     });
 
     // it("should return 401 if user is not logged in", async () => {
@@ -95,6 +110,12 @@ describe("/api/cocktails", () => {
       name = new Array(52).join("c");
       const res = await exec();
       expect(res.status).toBe(400);
+    });
+
+    it("should return 404 if an ingredient was not found", async () => {
+      components[0].ingredientId = mongoose.Types.ObjectId();
+      const res = await exec();
+      expect(res.status).toBe(404);
     });
 
     it("should save the cocktail if it is valid", async () => {
@@ -119,6 +140,7 @@ describe("/api/cocktails", () => {
     // let token;
     let newName;
     let cocktail;
+    let components;
     let id;
 
     const exec = () => {
@@ -126,12 +148,24 @@ describe("/api/cocktails", () => {
         request(server)
           .put(`/api/cocktails/${id}`)
           // .set("x-auth-token", token)
-          .send({ name: newName })
+          .send({ name: newName, components })
       );
     };
 
     beforeEach(async () => {
       cocktail = new Cocktail({ name: "cocktail1" });
+      const ingredient1 = await new Ingredient({
+        name: "ingredient1",
+        measure: "ml",
+      }).save();
+      const ingredient2 = await new Ingredient({
+        name: "ingredient2",
+        measure: "units",
+      }).save();
+      components = [
+        { ingredientId: ingredient1._id, quantity: 1 },
+        { ingredientId: ingredient2._id, quantity: 1 },
+      ];
       await cocktail.save();
       id = cocktail._id;
       // token = new User().generateAuthToken();

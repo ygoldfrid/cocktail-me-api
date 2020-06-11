@@ -8,6 +8,11 @@ const ingredientSchema = new mongoose.Schema({
     minlength: 3,
     maxlength: 50,
   },
+  measure: {
+    type: String,
+    required: true,
+    maxlength: 50,
+  },
 });
 
 const Ingredient = mongoose.model("Ingredient", ingredientSchema);
@@ -15,6 +20,7 @@ const Ingredient = mongoose.model("Ingredient", ingredientSchema);
 function validateIngredient(ingredient) {
   const schema = {
     name: Joi.string().min(3).max(50).required(),
+    measure: Joi.string().max(50).required(),
   };
 
   return Joi.validate(ingredient, schema);

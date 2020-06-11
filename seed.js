@@ -4,23 +4,42 @@ const mongoose = require("mongoose");
 const config = require("config");
 
 const ingredients = [
-  { name: "Rum" },
-  { name: "Tequila" },
-  { name: "Lemon syrup" },
-  { name: "Salt" },
-  { name: "Sugar" },
-  { name: "Orange juice" },
-  { name: "Whisky" },
+  { _id: mongoose.Types.ObjectId(), name: "Tequila", measure: "ml" },
+  { _id: mongoose.Types.ObjectId(), name: "Lemon", measure: "unit" },
+  { _id: mongoose.Types.ObjectId(), name: "Rum", measure: "ml" },
+  { _id: mongoose.Types.ObjectId(), name: "Coke", measure: "ml" },
+  { _id: mongoose.Types.ObjectId(), name: "Pisco", measure: "ml" },
 ];
 
 const cocktails = [
-  { name: "Margarita" },
-  { name: "Mojito" },
-  { name: "Pisco Sour" },
-  { name: "Piscola" },
-  { name: "Tequila Sunrise" },
-  { name: "Cuba Libre" },
-  { name: "Gin & Tonic" },
+  {
+    name: "Margarita",
+    components: [
+      { ingredient: ingredients[0], quantity: 100 },
+      { ingredient: ingredients[1], quantity: 4 },
+    ],
+  },
+  {
+    name: "Cuba Libre",
+    components: [
+      { ingredient: ingredients[2], quantity: 80 },
+      { ingredient: ingredients[3], quantity: 120 },
+    ],
+  },
+  {
+    name: "Pisco Sour",
+    components: [
+      { ingredient: ingredients[4], quantity: 80 },
+      { ingredient: ingredients[1], quantity: 6 },
+    ],
+  },
+  {
+    name: "Piscola",
+    components: [
+      { ingredient: ingredients[4], quantity: 100 },
+      { ingredient: ingredients[3], quantity: 100 },
+    ],
+  },
 ];
 
 async function seed() {
@@ -32,11 +51,11 @@ async function seed() {
   await Cocktail.deleteMany({});
   await Ingredient.deleteMany({});
 
-  for (let cocktail of cocktails) {
-    await new Cocktail({ name: cocktail.name }).save();
-  }
   for (let ingredient of ingredients) {
-    await new Ingredient({ name: ingredient.name }).save();
+    await new Ingredient(ingredient).save();
+  }
+  for (let cocktail of cocktails) {
+    await new Cocktail(cocktail).save();
   }
 
   mongoose.disconnect();
