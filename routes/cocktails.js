@@ -10,6 +10,22 @@ router.get("/", async (req, res) => {
   res.send(cocktails);
 });
 
+router.get("/:id", validateObjectId, async (req, res) => {
+  const cocktail = await Cocktail.findById(req.params.id);
+  if (!cocktail) return res.status(404).send("Cocktail not found");
+
+  res.status(200).send(cocktail);
+});
+
+router.get("/:id/ingredients", validateObjectId, async (req, res) => {
+  const cocktail = await Cocktail.findById(req.params.id);
+  if (!cocktail) return res.status(404).send("Cocktail not found");
+
+  const ingredients = cocktail.components;
+
+  res.status(200).send(ingredients);
+});
+
 router.post("/", validateBody(validateCocktail), async (req, res) => {
   const components = [];
   for (component of req.body.components) {
@@ -27,13 +43,6 @@ router.post("/", validateBody(validateCocktail), async (req, res) => {
     components,
   });
   await cocktail.save();
-
-  res.status(200).send(cocktail);
-});
-
-router.get("/:id", validateObjectId, async (req, res) => {
-  const cocktail = await Cocktail.findById(req.params.id);
-  if (!cocktail) return res.status(404).send("Cocktail not found");
 
   res.status(200).send(cocktail);
 });

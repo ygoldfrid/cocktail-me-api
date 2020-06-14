@@ -3,10 +3,31 @@ const router = express.Router();
 const { Ingredient, validateIngredient } = require("../models/ingredient");
 const validateObjectId = require("../middleware/validateObjectId");
 const validateBody = require("../middleware/validateBody");
+const { Cocktail } = require("../models/cocktail");
 
 router.get("/", async (req, res) => {
-  const ingredients = await Ingredient.find().sort("name");
+  const type = req.query.type;
+  const query = type ? { type } : {};
+  const ingredients = await Ingredient.find(query).sort("name");
   res.send(ingredients);
+});
+
+router.get("/:id", validateObjectId, async (req, res) => {
+  const ingredient = await Ingredient.findById(req.params.id);
+  if (!ingredient) return res.status(404).send("Ingredient not found");
+
+  res.status(200).send(ingredient);
+});
+
+router.get("/:id/cocktails", validateObjectId, async (req, res) => {
+  const ingredient = await Ingredient.findById(req.params.id);
+  if (!ingredient) return res.status(404).send("Ingredient not found");
+
+  const cocktails = await Cocktail.find({
+    "components.ingredient": { $in: [ingredient] },
+  });
+
+  res.status(200).send(cocktails);
 });
 
 router.post("/", validateBody(validateIngredient), async (req, res) => {
@@ -15,13 +36,6 @@ router.post("/", validateBody(validateIngredient), async (req, res) => {
     measure: req.body.measure,
   });
   await ingredient.save();
-
-  res.status(200).send(ingredient);
-});
-
-router.get("/:id", validateObjectId, async (req, res) => {
-  const ingredient = await Ingredient.findById(req.params.id);
-  if (!ingredient) return res.status(404).send("Ingredient not found");
 
   res.status(200).send(ingredient);
 });
