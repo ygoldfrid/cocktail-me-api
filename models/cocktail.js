@@ -9,8 +9,8 @@ const cocktailSchema = new mongoose.Schema({
     minlength: 3,
     maxlength: 50,
   },
-  recipe: {
-    type: String,
+  preparation: {
+    type: Array,
     required: true,
     minlength: 10,
     maxlength: 1023,
@@ -39,8 +39,8 @@ const Cocktail = mongoose.model("Cocktail", cocktailSchema);
 function validateCocktail(cocktail) {
   const schema = {
     name: Joi.string().min(3).max(50).required(),
-    recipe: Joi.string().min(10).max(1023).required(),
     image: Joi.string().min(5).max(255).required(),
+    preparation: Joi.array().items(Joi.string().min(10).max(1023)).required(),
     components: Joi.array()
       .items(
         Joi.object({
