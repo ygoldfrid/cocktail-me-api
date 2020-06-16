@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { Ingredient, validateIngredient } = require("../models/ingredient");
+const { Cocktail } = require("../models/cocktail");
 const validateObjectId = require("../middleware/validateObjectId");
 const validateBody = require("../middleware/validateBody");
-const { Cocktail } = require("../models/cocktail");
 
 router.get("/", async (req, res) => {
   const type = req.query.type;
