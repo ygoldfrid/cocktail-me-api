@@ -24,10 +24,9 @@ const cocktailSchema = new mongoose.Schema({
   components: [
     {
       ingredient: ingredientSchema,
-      quantity: {
-        type: Number,
-        required: true,
-        minlength: 0,
+      measure: {
+        type: String,
+        minlength: 1,
         maxlength: 255,
       },
     },
@@ -45,7 +44,7 @@ function validateCocktail(cocktail) {
       .items(
         Joi.object({
           ingredientId: Joi.objectId().required(),
-          quantity: Joi.number().min(0).max(255).required(),
+          measure: Joi.string().min(1).max(255).required(),
         })
       )
       .min(1)

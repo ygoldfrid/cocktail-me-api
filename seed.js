@@ -20,61 +20,51 @@ async function run() {
     name: "Cachaça",
     image: `${config.get("base_url")}/images/ingredients/cachaca.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const cognac = await new Ingredient({
     name: "Cognac",
     image: `${config.get("base_url")}/images/ingredients/cognac.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const brandy = await new Ingredient({
     name: "Brandy",
     image: `${config.get("base_url")}/images/ingredients/brandy.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const gin = await new Ingredient({
     name: "Gin",
     image: `${config.get("base_url")}/images/ingredients/gin.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const pisco = await new Ingredient({
     name: "Pisco",
     image: `${config.get("base_url")}/images/ingredients/pisco.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const rum = await new Ingredient({
     name: "Rum",
     image: `${config.get("base_url")}/images/ingredients/rum.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const tequila = await new Ingredient({
     name: "Tequila",
     image: `${config.get("base_url")}/images/ingredients/tequila.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const vodka = await new Ingredient({
     name: "Vodka",
     image: `${config.get("base_url")}/images/ingredients/vodka.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const white_rum = await new Ingredient({
     name: "White Rum",
     image: `${config.get("base_url")}/images/ingredients/white_rum.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
   const whiskey = await new Ingredient({
     name: "Whiskey",
     image: `${config.get("base_url")}/images/ingredients/whiskey.jpg`,
     type: "Spirits",
-    measure: "ml",
   }).save();
 
   //Liqueurs, Wines & Beer
@@ -82,61 +72,51 @@ async function run() {
     name: "Cointreau",
     image: `${config.get("base_url")}/images/ingredients/cointreau.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const drambuie = await new Ingredient({
     name: "Drambuie",
     image: `${config.get("base_url")}/images/ingredients/drambuie.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const coffee_liqueur = await new Ingredient({
     name: "Coffee Liqueur",
     image: `${config.get("base_url")}/images/ingredients/coffee_liqueur.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const lillet_blanc = await new Ingredient({
     name: "Lillet Blanc",
     image: `${config.get("base_url")}/images/ingredients/lillet_blanc.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const dry_vermouth = await new Ingredient({
     name: "Dry Vermouth",
     image: `${config.get("base_url")}/images/ingredients/dry_vermouth.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const campari = await new Ingredient({
     name: "Campari",
     image: `${config.get("base_url")}/images/ingredients/campari.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const red_vermouth = await new Ingredient({
     name: "Red Vermouth",
     image: `${config.get("base_url")}/images/ingredients/red_vermouth.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const champagne = await new Ingredient({
     name: "Champagne",
     image: `${config.get("base_url")}/images/ingredients/champagne.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const red_wine = await new Ingredient({
     name: "Red Wine",
     image: `${config.get("base_url")}/images/ingredients/red_wine.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
   const beer = await new Ingredient({
     name: "Beer",
     image: `${config.get("base_url")}/images/ingredients/beer.jpg`,
     type: "Liqueurs",
-    measure: "ml",
   }).save();
 
   //Mixers
@@ -145,74 +125,67 @@ async function run() {
     name: "Cola",
     image: `${config.get("base_url")}/images/ingredients/cola.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const soda_water = await new Ingredient({
     name: "Soda Water",
     image: `${config.get("base_url")}/images/ingredients/soda_water.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const tonic_water = await new Ingredient({
     name: "Tonic Water",
     image: `${config.get("base_url")}/images/ingredients/tonic_water.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const grapefruit_soda = await new Ingredient({
     name: "Grapefruit Soda",
     image: `${config.get("base_url")}/images/ingredients/grapefruit_soda.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   //Juices
   const orange_juice = await new Ingredient({
     name: "Orange Juice",
     image: `${config.get("base_url")}/images/ingredients/orange_juice.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const lime_juice = await new Ingredient({
     name: "Lime Juice",
     image: `${config.get("base_url")}/images/ingredients/lime_juice.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const lemon_juice = await new Ingredient({
     name: "Lemon Juice",
     image: `${config.get("base_url")}/images/ingredients/lemon_juice.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const cranberry_juice = await new Ingredient({
     name: "Cranberry Juice",
     image: `${config.get("base_url")}/images/ingredients/cranberry_juice.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const pineapple_juice = await new Ingredient({
     name: "Pineapple Juice",
     image: `${config.get("base_url")}/images/ingredients/pineapple_juice.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const tomato_juice = await new Ingredient({
     name: "Tomato Juice",
     image: `${config.get("base_url")}/images/ingredients/tomato_juice.jpg`,
     type: "Mixers",
-    measure: "ml",
+  }).save();
+  const clamato_juice = await new Ingredient({
+    name: "Clamato Juice",
+    image: `${config.get("base_url")}/images/ingredients/clamato_juice.jpg`,
+    type: "Mixers",
   }).save();
   const grenadine = await new Ingredient({
     name: "Grenadine",
     image: `${config.get("base_url")}/images/ingredients/grenadine.jpg`,
     type: "Mixers",
-    measure: "ml",
   }).save();
   const angostura_bitter = await new Ingredient({
     name: "Angostura Bitter",
     image: `${config.get("base_url")}/images/ingredients/angostura_bitter.jpg`,
     type: "Mixers",
-    measure: "dash",
   }).save();
 
   //Others
@@ -221,112 +194,94 @@ async function run() {
     name: "Lemon",
     image: `${config.get("base_url")}/images/ingredients/lemon.jpg`,
     type: "Others",
-    measure: "units",
   }).save();
   const lime = await new Ingredient({
     name: "Lime",
     image: `${config.get("base_url")}/images/ingredients/lime.jpg`,
     type: "Others",
-    measure: "units",
   }).save();
   const fruit_mix = await new Ingredient({
     name: "Fruit Mix",
     image: `${config.get("base_url")}/images/ingredients/fruit_mix.jpg`,
     type: "Others",
-    measure: "units",
   }).save();
   const mint = await new Ingredient({
     name: "Mint",
     image: `${config.get("base_url")}/images/ingredients/mint.jpg`,
     type: "Others",
-    measure: "sprigs",
   }).save();
   const olives = await new Ingredient({
     name: "Olives",
     image: `${config.get("base_url")}/images/ingredients/olives.jpg`,
     type: "Others",
-    measure: "to taste",
   }).save();
   const celery = await new Ingredient({
     name: "Celery",
     image: `${config.get("base_url")}/images/ingredients/celery.jpg`,
     type: "Others",
-    measure: "sprigs",
   }).save();
   const egg_white = await new Ingredient({
     name: "Egg White",
     image: `${config.get("base_url")}/images/ingredients/egg_white.jpg`,
     type: "Others",
-    measure: "units",
   }).save();
   const coconut_cream = await new Ingredient({
     name: "Coconut Cream",
     image: `${config.get("base_url")}/images/ingredients/coconut_cream.jpg`,
     type: "Others",
-    measure: "ml",
   }).save();
   const fresh_cream = await new Ingredient({
     name: "Cream",
     image: `${config.get("base_url")}/images/ingredients/fresh_cream.jpg`,
     type: "Others",
-    measure: "ml",
   }).save();
   const coffee = await new Ingredient({
     name: "Coffee",
     image: `${config.get("base_url")}/images/ingredients/coffee.jpg`,
     type: "Others",
-    measure: "ml",
   }).save();
   //Syrups
   const sugar_syrup = await new Ingredient({
     name: "Sugar Syrup",
     image: `${config.get("base_url")}/images/ingredients/sugar_syrup.jpg`,
     type: "Others",
-    measure: "ml",
   }).save();
   const orgeat_syrup = await new Ingredient({
     name: "Orgeat Syrup",
     image: `${config.get("base_url")}/images/ingredients/orgeat_syrup.jpg`,
     type: "Others",
-    measure: "ml",
   }).save();
   //Sauces
   const worcestershire = await new Ingredient({
     name: "Worcester shire",
     image: `${config.get("base_url")}/images/ingredients/worcestershire.jpg`,
     type: "Others",
-    measure: "drops",
   }).save();
   const hot_sauce = await new Ingredient({
     name: "Hot Sauce",
     image: `${config.get("base_url")}/images/ingredients/hot_sauce.jpg`,
     type: "Others",
-    measure: "drops",
   }).save();
   //Powders
   const sugar = await new Ingredient({
     name: "Sugar",
     image: `${config.get("base_url")}/images/ingredients/sugar.jpg`,
     type: "Others",
-    measure: "ts",
   }).save();
   const salt = await new Ingredient({
     name: "Salt",
     image: `${config.get("base_url")}/images/ingredients/salt.jpg`,
     type: "Others",
-    measure: "ts",
   }).save();
   const pepper = await new Ingredient({
     name: "Pepper",
     image: `${config.get("base_url")}/images/ingredients/pepper.jpg`,
     type: "Others",
-    measure: "ts",
   }).save();
   const chilly_powder = await new Ingredient({
     name: "Chilly Powder",
     image: `${config.get("base_url")}/images/ingredients/chilly_powder.jpg`,
     type: "Others",
-    measure: "dash",
   }).save();
 
   //Cocktails
@@ -340,14 +295,14 @@ async function run() {
       "Top with your favorite beer. Stir and enjoy immediately.",
     ],
     components: [
-      { ingredient: beer, quantity: 350 },
-      { ingredient: tomato_juice, quantity: 150 },
-      { ingredient: lime_juice, quantity: 50 },
-      { ingredient: lime, quantity: 1 },
-      { ingredient: hot_sauce, quantity: 4 },
-      { ingredient: chilly_powder, quantity: 1 },
-      { ingredient: worcestershire, quantity: 4 },
-      { ingredient: salt, quantity: 2 },
+      { ingredient: beer, measure: "350 ml" },
+      { ingredient: clamato_juice, measure: "150 ml" },
+      { ingredient: lime_juice, measure: "50 ml" },
+      { ingredient: lime, measure: "cut in 4" },
+      { ingredient: hot_sauce, measure: "4 drops" },
+      { ingredient: chilly_powder, measure: "1 ts" },
+      { ingredient: worcestershire, measure: "4 drops" },
+      { ingredient: salt, measure: "2 ts" },
     ],
   }).save();
   await new Cocktail({
@@ -358,10 +313,10 @@ async function run() {
       "Shake well and strain into cocktail glass rimmed with salt.",
     ],
     components: [
-      { ingredient: tequila, quantity: 50 },
-      { ingredient: cointreau, quantity: 50 },
-      { ingredient: lime_juice, quantity: 50 },
-      { ingredient: salt, quantity: 1 },
+      { ingredient: tequila, measure: "50 ml" },
+      { ingredient: cointreau, measure: "50 ml" },
+      { ingredient: lime_juice, measure: "50 ml" },
+      { ingredient: salt, measure: "1 ts" },
     ],
   }).save();
   await new Cocktail({
@@ -372,9 +327,9 @@ async function run() {
       "Garnish with lime wedge.",
     ],
     components: [
-      { ingredient: white_rum, quantity: 50 },
-      { ingredient: cola, quantity: 120 },
-      { ingredient: lime_juice, quantity: 10 },
+      { ingredient: white_rum, measure: "50 ml" },
+      { ingredient: cola, measure: "120 ml" },
+      { ingredient: lime_juice, measure: "10 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -385,10 +340,10 @@ async function run() {
       "Strain into a glass and garnish with bitters.",
     ],
     components: [
-      { ingredient: pisco, quantity: 60 },
-      { ingredient: lime_juice, quantity: 30 },
-      { ingredient: egg_white, quantity: 1 },
-      { ingredient: sugar_syrup, quantity: 20 },
+      { ingredient: pisco, measure: "60 ml" },
+      { ingredient: lime_juice, measure: "30 ml" },
+      { ingredient: sugar_syrup, measure: "20 ml" },
+      { ingredient: egg_white, measure: "1" },
     ],
   }).save();
   await new Cocktail({
@@ -399,8 +354,8 @@ async function run() {
       "Garnish with lime wedge.",
     ],
     components: [
-      { ingredient: pisco, quantity: 80 },
-      { ingredient: cola, quantity: 120 },
+      { ingredient: pisco, measure: "80 ml" },
+      { ingredient: cola, measure: "120 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -413,9 +368,9 @@ async function run() {
       "Garnish and serve.",
     ],
     components: [
-      { ingredient: tequila, quantity: 45 },
-      { ingredient: orange_juice, quantity: 90 },
-      { ingredient: grenadine, quantity: 15 },
+      { ingredient: tequila, measure: "45 ml" },
+      { ingredient: orange_juice, measure: "90 ml" },
+      { ingredient: grenadine, measure: "15 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -429,11 +384,11 @@ async function run() {
       "Serve with straw.",
     ],
     components: [
-      { ingredient: white_rum, quantity: 40 },
-      { ingredient: lime_juice, quantity: 30 },
-      { ingredient: soda_water, quantity: 0 },
-      { ingredient: mint, quantity: 6 },
-      { ingredient: sugar, quantity: 2 },
+      { ingredient: white_rum, measure: "40 ml" },
+      { ingredient: lime_juice, measure: "30 ml" },
+      { ingredient: mint, measure: "6 leaves" },
+      { ingredient: sugar, measure: "2 ts" },
+      { ingredient: soda_water, measure: "Top up" },
     ],
   }).save();
   await new Cocktail({
@@ -441,8 +396,8 @@ async function run() {
     image: `${config.get("base_url")}/images/cocktails/gin_and_tonic.jpg`,
     preparation: ["In a glass filled with ice cubes, add gin and tonic."],
     components: [
-      { ingredient: gin, quantity: 50 },
-      { ingredient: tonic_water, quantity: 120 },
+      { ingredient: gin, measure: "50 ml" },
+      { ingredient: tonic_water, measure: "120 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -454,9 +409,9 @@ async function run() {
       "Squeeze oil from lemon peel onto the drink, or garnish with olive.",
     ],
     components: [
-      { ingredient: gin, quantity: 60 },
-      { ingredient: dry_vermouth, quantity: 10 },
-      { ingredient: olives, quantity: 1 },
+      { ingredient: gin, measure: "60 ml" },
+      { ingredient: dry_vermouth, measure: "10 ml" },
+      { ingredient: olives, measure: "1" },
     ],
   }).save();
   await new Cocktail({
@@ -468,9 +423,9 @@ async function run() {
       "Squeeze oil from lemon peel onto the drink, or garnish with olive.",
     ],
     components: [
-      { ingredient: vodka, quantity: 60 },
-      { ingredient: dry_vermouth, quantity: 10 },
-      { ingredient: olives, quantity: 1 },
+      { ingredient: vodka, measure: "60 ml" },
+      { ingredient: dry_vermouth, measure: "10 ml" },
+      { ingredient: olives, measure: "1" },
     ],
   }).save();
   await new Cocktail({
@@ -481,9 +436,9 @@ async function run() {
       "Fill the glass with ice and add the Cachaça.",
     ],
     components: [
-      { ingredient: cachaca, quantity: 50 },
-      { ingredient: lime, quantity: 1 },
-      { ingredient: sugar, quantity: 2 },
+      { ingredient: cachaca, measure: "50 ml" },
+      { ingredient: lime, measure: "cut in 4" },
+      { ingredient: sugar, measure: "2 ts" },
     ],
   }).save();
   await new Cocktail({
@@ -494,9 +449,9 @@ async function run() {
       "Fill the glass with ice and add the Vodka.",
     ],
     components: [
-      { ingredient: vodka, quantity: 50 },
-      { ingredient: lime, quantity: 1 },
-      { ingredient: sugar, quantity: 2 },
+      { ingredient: vodka, measure: "50 ml" },
+      { ingredient: lime, measure: "cut in 4" },
+      { ingredient: sugar, measure: "2 ts" },
     ],
   }).save();
   await new Cocktail({
@@ -507,9 +462,9 @@ async function run() {
       "Shake well and strain into cocktail glass.",
     ],
     components: [
-      { ingredient: cognac, quantity: 50 },
-      { ingredient: cointreau, quantity: 20 },
-      { ingredient: lemon_juice, quantity: 20 },
+      { ingredient: cognac, measure: "50 ml" },
+      { ingredient: cointreau, measure: "20 ml" },
+      { ingredient: lemon_juice, measure: "20 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -520,14 +475,14 @@ async function run() {
       "Optionally garnish with lemon slice.",
     ],
     components: [
-      { ingredient: tequila, quantity: 15 },
-      { ingredient: vodka, quantity: 15 },
-      { ingredient: white_rum, quantity: 15 },
-      { ingredient: cointreau, quantity: 15 },
-      { ingredient: gin, quantity: 15 },
-      { ingredient: lemon_juice, quantity: 25 },
-      { ingredient: sugar_syrup, quantity: 30 },
-      { ingredient: cola, quantity: 0 },
+      { ingredient: tequila, measure: "15 ml" },
+      { ingredient: vodka, measure: "15 ml" },
+      { ingredient: white_rum, measure: "15 ml" },
+      { ingredient: cointreau, measure: "15 ml" },
+      { ingredient: gin, measure: "15 ml" },
+      { ingredient: lemon_juice, measure: "25 ml" },
+      { ingredient: sugar_syrup, measure: "30 ml" },
+      { ingredient: cola, measure: "Top up" },
     ],
   }).save();
   await new Cocktail({
@@ -539,10 +494,10 @@ async function run() {
       "Garnish with lime slice.",
     ],
     components: [
-      { ingredient: vodka, quantity: 40 },
-      { ingredient: cointreau, quantity: 15 },
-      { ingredient: lime_juice, quantity: 15 },
-      { ingredient: cranberry_juice, quantity: 15 },
+      { ingredient: vodka, measure: "40 ml" },
+      { ingredient: cointreau, measure: "15 ml" },
+      { ingredient: lime_juice, measure: "15 ml" },
+      { ingredient: cranberry_juice, measure: "15 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -555,9 +510,9 @@ async function run() {
       "Strain into chilled cocktail glass.",
     ],
     components: [
-      { ingredient: white_rum, quantity: 60 },
-      { ingredient: lime_juice, quantity: 20 },
-      { ingredient: sugar, quantity: 2 },
+      { ingredient: white_rum, measure: "60 ml" },
+      { ingredient: lime_juice, measure: "20 ml" },
+      { ingredient: sugar, measure: "2 ts" },
     ],
   }).save();
   await new Cocktail({
@@ -569,11 +524,11 @@ async function run() {
       "Garnish and serve with straw.",
     ],
     components: [
-      { ingredient: rum, quantity: 60 },
-      { ingredient: cointreau, quantity: 15 },
-      { ingredient: orgeat_syrup, quantity: 15 },
-      { ingredient: sugar_syrup, quantity: 10 },
-      { ingredient: lime_juice, quantity: 15 },
+      { ingredient: rum, measure: "60 ml" },
+      { ingredient: cointreau, measure: "15 ml" },
+      { ingredient: orgeat_syrup, measure: "15 ml" },
+      { ingredient: sugar_syrup, measure: "10 ml" },
+      { ingredient: lime_juice, measure: "15 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -584,9 +539,9 @@ async function run() {
       "Pour into a large goblet or Hurricane glass and serve.",
     ],
     components: [
-      { ingredient: white_rum, quantity: 50 },
-      { ingredient: coconut_cream, quantity: 30 },
-      { ingredient: pineapple_juice, quantity: 50 },
+      { ingredient: white_rum, measure: "50 ml" },
+      { ingredient: coconut_cream, measure: "30 ml" },
+      { ingredient: pineapple_juice, measure: "50 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -594,8 +549,8 @@ async function run() {
     image: `${config.get("base_url")}/images/cocktails/paloma.jpg`,
     preparation: ["Stir together and serve over ice."],
     components: [
-      { ingredient: tequila, quantity: 50 },
-      { ingredient: grapefruit_soda, quantity: 150 },
+      { ingredient: tequila, measure: "50 ml" },
+      { ingredient: grapefruit_soda, measure: "150 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -606,8 +561,8 @@ async function run() {
       "Stir gently.",
     ],
     components: [
-      { ingredient: vodka, quantity: 40 },
-      { ingredient: coffee_liqueur, quantity: 20 },
+      { ingredient: vodka, measure: "40 ml" },
+      { ingredient: coffee_liqueur, measure: "20 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -618,13 +573,13 @@ async function run() {
       "Garnish.",
     ],
     components: [
-      { ingredient: vodka, quantity: 45 },
-      { ingredient: tomato_juice, quantity: 90 },
-      { ingredient: lemon_juice, quantity: 15 },
-      { ingredient: worcestershire, quantity: 3 },
-      { ingredient: celery, quantity: 1 },
-      { ingredient: hot_sauce, quantity: 0 },
-      { ingredient: pepper, quantity: 0 },
+      { ingredient: vodka, measure: "45 ml" },
+      { ingredient: tomato_juice, measure: "90 ml" },
+      { ingredient: lemon_juice, measure: "15 ml" },
+      { ingredient: worcestershire, measure: "3 drops" },
+      { ingredient: celery, measure: "1 sprig" },
+      { ingredient: hot_sauce, measure: "to taste" },
+      { ingredient: pepper, measure: "to taste" },
     ],
   }).save();
   await new Cocktail({
@@ -636,10 +591,10 @@ async function run() {
       "Serve hot.",
     ],
     components: [
-      { ingredient: whiskey, quantity: 40 },
-      { ingredient: coffee, quantity: 80 },
-      { ingredient: fresh_cream, quantity: 30 },
-      { ingredient: sugar, quantity: 1 },
+      { ingredient: whiskey, measure: "40 ml" },
+      { ingredient: coffee, measure: "80 ml" },
+      { ingredient: fresh_cream, measure: "30 ml" },
+      { ingredient: sugar, measure: "1 ts" },
     ],
   }).save();
   await new Cocktail({
@@ -649,9 +604,9 @@ async function run() {
       "Stirred over ice, strained into a chilled glass, garnished, and served up.",
     ],
     components: [
-      { ingredient: whiskey, quantity: 50 },
-      { ingredient: red_vermouth, quantity: 20 },
-      { ingredient: angostura_bitter, quantity: 1 },
+      { ingredient: whiskey, measure: "50 ml" },
+      { ingredient: red_vermouth, measure: "20 ml" },
+      { ingredient: angostura_bitter, measure: "a dash" },
     ],
   }).save();
   await new Cocktail({
@@ -664,9 +619,9 @@ async function run() {
       "Garnish with orange twist, and a cocktail cherry.",
     ],
     components: [
-      { ingredient: whiskey, quantity: 45 },
-      { ingredient: angostura_bitter, quantity: 2 },
-      { ingredient: sugar, quantity: 1 },
+      { ingredient: whiskey, measure: "45 ml" },
+      { ingredient: angostura_bitter, measure: "2 dashes" },
+      { ingredient: sugar, measure: "1 ts" },
     ],
   }).save();
   await new Cocktail({
@@ -678,8 +633,8 @@ async function run() {
       "Garnish with a lemon twist",
     ],
     components: [
-      { ingredient: whiskey, quantity: 45 },
-      { ingredient: drambuie, quantity: 30 },
+      { ingredient: whiskey, measure: "45 ml" },
+      { ingredient: drambuie, measure: "30 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -690,9 +645,9 @@ async function run() {
       "Strain into chilled glass, garnish and serve.",
     ],
     components: [
-      { ingredient: whiskey, quantity: 45 },
-      { ingredient: lemon_juice, quantity: 30 },
-      { ingredient: sugar_syrup, quantity: 15 },
+      { ingredient: whiskey, measure: "45 ml" },
+      { ingredient: lemon_juice, measure: "30 ml" },
+      { ingredient: sugar_syrup, measure: "15 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -703,9 +658,9 @@ async function run() {
       "Garnish and serve.",
     ],
     components: [
-      { ingredient: gin, quantity: 45 },
-      { ingredient: vodka, quantity: 15 },
-      { ingredient: lillet_blanc, quantity: 10 },
+      { ingredient: gin, measure: "45 ml" },
+      { ingredient: vodka, measure: "15 ml" },
+      { ingredient: lillet_blanc, measure: "10 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -713,9 +668,9 @@ async function run() {
     image: `${config.get("base_url")}/images/cocktails/negroni.jpg`,
     preparation: ["Stir into glass over ice, garnish and serve."],
     components: [
-      { ingredient: gin, quantity: 30 },
-      { ingredient: red_vermouth, quantity: 30 },
-      { ingredient: campari, quantity: 30 },
+      { ingredient: gin, measure: "30 ml" },
+      { ingredient: red_vermouth, measure: "30 ml" },
+      { ingredient: campari, measure: "30 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -728,10 +683,10 @@ async function run() {
       "Add a dash of Angostura bitters.",
     ],
     components: [
-      { ingredient: gin, quantity: 45 },
-      { ingredient: lemon_juice, quantity: 30 },
-      { ingredient: sugar_syrup, quantity: 15 },
-      { ingredient: soda_water, quantity: 60 },
+      { ingredient: gin, measure: "45 ml" },
+      { ingredient: lemon_juice, measure: "30 ml" },
+      { ingredient: sugar_syrup, measure: "15 ml" },
+      { ingredient: soda_water, measure: "60 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -741,8 +696,8 @@ async function run() {
       "Ensure both ingredients are well chilled, then mix into the glass. Serve cold.",
     ],
     components: [
-      { ingredient: champagne, quantity: 75 },
-      { ingredient: orange_juice, quantity: 75 },
+      { ingredient: champagne, measure: "75 ml" },
+      { ingredient: orange_juice, measure: "75 ml" },
     ],
   }).save();
   await new Cocktail({
@@ -753,9 +708,9 @@ async function run() {
       "Add a splash of soda water and garnish with half orange slice and a lemon twist.",
     ],
     components: [
-      { ingredient: campari, quantity: 30 },
-      { ingredient: red_vermouth, quantity: 30 },
-      { ingredient: soda_water, quantity: 0 },
+      { ingredient: campari, measure: "30 ml" },
+      { ingredient: red_vermouth, measure: "30 ml" },
+      { ingredient: soda_water, measure: "Top up" },
     ],
   }).save();
   await new Cocktail({
@@ -767,11 +722,11 @@ async function run() {
       "Refrigerate for 2 to 8 hours for maximum fruity flavor.",
     ],
     components: [
-      { ingredient: red_wine, quantity: 750 },
-      { ingredient: cognac, quantity: 50 },
-      { ingredient: orange_juice, quantity: 200 },
-      { ingredient: fruit_mix, quantity: 0 },
-      { ingredient: sugar, quantity: 0 },
+      { ingredient: red_wine, measure: "1 bottle" },
+      { ingredient: cognac, measure: "50 ml" },
+      { ingredient: orange_juice, measure: "200 ml" },
+      { ingredient: fruit_mix, measure: "to taste" },
+      { ingredient: sugar, measure: "to taste" },
     ],
   }).save();
 
@@ -796,6 +751,8 @@ async function run() {
   await lime_juice.save();
   lemon_juice.alternatives = [lime_juice];
   await lemon_juice.save();
+  clamato_juice.alternatives = [tomato_juice];
+  await clamato_juice.save();
 
   //Clean up
   mongoose.disconnect();

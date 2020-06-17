@@ -26,11 +26,6 @@ const ingredientSchema = new mongoose.Schema({
       ref: "Ingredient",
     },
   ],
-  measure: {
-    type: String,
-    required: true,
-    maxlength: 50,
-  },
 });
 
 const Ingredient = mongoose.model("Ingredient", ingredientSchema);
@@ -40,7 +35,6 @@ function validateIngredient(ingredient) {
     name: Joi.string().min(3).max(50).required(),
     type: Joi.string().min(3).max(50).required(),
     image: Joi.string().min(5).max(255).required(),
-    measure: Joi.string().max(50).required(),
   };
 
   return Joi.validate(ingredient, schema);
