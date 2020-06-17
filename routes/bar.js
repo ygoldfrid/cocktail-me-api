@@ -10,7 +10,7 @@ const validateBody = require("../middleware/validateBody");
 router.get("/", auth, async (req, res) => {
   const user = await User.findById(req.user._id).populate(
     "bar",
-    "_id name image"
+    "_id name image alternatives"
   );
   res.send(user.bar);
 });

@@ -28,6 +28,12 @@ async function run() {
     type: "Spirits",
     measure: "ml",
   }).save();
+  const brandy = await new Ingredient({
+    name: "Brandy",
+    image: `${config.get("base_url")}/images/ingredients/brandy.jpg`,
+    type: "Spirits",
+    measure: "ml",
+  }).save();
   const gin = await new Ingredient({
     name: "Gin",
     image: `${config.get("base_url")}/images/ingredients/gin.jpg`,
@@ -160,12 +166,6 @@ async function run() {
     measure: "ml",
   }).save();
   //Juices
-  const grapefruit_juice = await new Ingredient({
-    name: "Grapefruit Juice",
-    image: `${config.get("base_url")}/images/ingredients/grapefruit_juice.jpg`,
-    type: "Mixers",
-    measure: "ml",
-  }).save();
   const orange_juice = await new Ingredient({
     name: "Orange Juice",
     image: `${config.get("base_url")}/images/ingredients/orange_juice.jpg`,
@@ -595,7 +595,7 @@ async function run() {
     preparation: ["Stir together and serve over ice."],
     components: [
       { ingredient: tequila, quantity: 50 },
-      { ingredient: grapefruit_juice, quantity: 150 },
+      { ingredient: grapefruit_soda, quantity: 150 },
     ],
   }).save();
   await new Cocktail({
@@ -774,6 +774,28 @@ async function run() {
       { ingredient: sugar, quantity: 0 },
     ],
   }).save();
+
+  //Alternatives
+  cognac.alternatives = [brandy];
+  await cognac.save();
+  brandy.alternatives = [cognac];
+  await brandy.save();
+  rum.alternatives = [white_rum];
+  await rum.save();
+  white_rum.alternatives = [rum];
+  await white_rum.save();
+  sugar.alternatives = [sugar_syrup];
+  await sugar.save();
+  sugar_syrup.alternatives = [sugar];
+  await sugar_syrup.save();
+  lime.alternatives = [lime_juice, lemon_juice, lemon];
+  await lime.save();
+  lemon.alternatives = [lemon_juice, lime_juice, lime];
+  await lemon.save();
+  lime_juice.alternatives = [lemon_juice];
+  await lime_juice.save();
+  lemon_juice.alternatives = [lime_juice];
+  await lemon_juice.save();
 
   //Clean up
   mongoose.disconnect();

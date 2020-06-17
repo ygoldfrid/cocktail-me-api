@@ -20,6 +20,12 @@ const ingredientSchema = new mongoose.Schema({
     minlength: 5,
     maxlength: 255,
   },
+  alternatives: [
+    {
+      type: mongoose.Schema.ObjectId,
+      ref: "Ingredient",
+    },
+  ],
   measure: {
     type: String,
     required: true,

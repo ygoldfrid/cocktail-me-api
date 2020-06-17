@@ -9,11 +9,15 @@ router.get("/", async (req, res) => {
   const type = req.query.type;
   const query = type ? { type } : {};
   const ingredients = await Ingredient.find(query).sort("name");
+
   res.send(ingredients);
 });
 
 router.get("/:id", validateObjectId, async (req, res) => {
-  const ingredient = await Ingredient.findById(req.params.id);
+  const ingredient = await Ingredient.findById(req.params.id).populate(
+    "alternatives",
+    "_id name image"
+  );
   if (!ingredient) return res.status(404).send("Ingredient not found");
 
   res.status(200).send(ingredient);
@@ -24,7 +28,9 @@ router.get("/:id/cocktails", validateObjectId, async (req, res) => {
   if (!ingredient) return res.status(404).send("Ingredient not found");
 
   const cocktails = await Cocktail.find({
-    "components.ingredient": { $in: [ingredient] },
+    "components.ingredient._id": {
+      $in: [ingredient._id, ...ingredient.alternatives],
+    },
   });
 
   res.status(200).send(cocktails);
