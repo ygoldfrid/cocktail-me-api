@@ -28,7 +28,7 @@ router.get("/:id/cocktails", validateObjectId, async (req, res) => {
   if (!ingredient) return res.status(404).send("Ingredient not found");
 
   const cocktails = await Cocktail.find({
-    "components.ingredient._id": {
+    "components.ingredient": {
       $in: [ingredient._id, ...ingredient.alternatives],
     },
   });

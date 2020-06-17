@@ -6,36 +6,26 @@ const validateObjectId = require("../middleware/validateObjectId");
 const validateBody = require("../middleware/validateBody");
 
 router.get("/", async (req, res) => {
-  const cocktails = await Cocktail.find().sort("name");
+  const cocktails = await Cocktail.find().sort("name").select("-__v");
   res.send(cocktails);
 });
 
 router.get("/:id", validateObjectId, async (req, res) => {
-  const cocktail = await Cocktail.findById(req.params.id);
+  const cocktail = await Cocktail.findById(req.params.id)
+    .select("-__v")
+    .populate("components.ingredient", "_id name image measure alternatives");
   if (!cocktail) return res.status(404).send("Cocktail not found");
 
   res.status(200).send(cocktail);
 });
 
-router.get("/:id/ingredients", validateObjectId, async (req, res) => {
-  const cocktail = await Cocktail.findById(req.params.id);
-  if (!cocktail) return res.status(404).send("Cocktail not found");
-
-  const ingredients = cocktail.components;
-
-  res.status(200).send(ingredients);
-});
-
 router.post("/", validateBody(validateCocktail), async (req, res) => {
   const components = [];
   for (component of req.body.components) {
-    const ingredientInDb = await Ingredient.findById(component.ingredientId);
-    if (!ingredientInDb)
+    const ingredient = await Ingredient.findById(component.ingredientId);
+    if (!ingredient)
       return res.status(404).send("One of the ingredients was not found");
-    components.push({
-      ingredient: ingredientInDb,
-      quantity: component.quantity,
-    });
+    components.push({ ingredient });
   }
 
   const cocktail = new Cocktail({
