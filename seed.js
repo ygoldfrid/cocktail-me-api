@@ -19,104 +19,107 @@ async function run() {
   const cachaca = await new Ingredient({
     name: "Cachaça",
     image: `${config.get("base_url")}/images/ingredients/cachaca.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const cognac = await new Ingredient({
     name: "Cognac",
     image: `${config.get("base_url")}/images/ingredients/cognac.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const brandy = await new Ingredient({
     name: "Brandy",
     image: `${config.get("base_url")}/images/ingredients/brandy.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const gin = await new Ingredient({
     name: "Gin",
     image: `${config.get("base_url")}/images/ingredients/gin.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const pisco = await new Ingredient({
     name: "Pisco",
     image: `${config.get("base_url")}/images/ingredients/pisco.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const rum = await new Ingredient({
     name: "Rum",
     image: `${config.get("base_url")}/images/ingredients/rum.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const tequila = await new Ingredient({
     name: "Tequila",
     image: `${config.get("base_url")}/images/ingredients/tequila.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const vodka = await new Ingredient({
     name: "Vodka",
     image: `${config.get("base_url")}/images/ingredients/vodka.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const white_rum = await new Ingredient({
     name: "White Rum",
     image: `${config.get("base_url")}/images/ingredients/white_rum.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
   const whiskey = await new Ingredient({
     name: "Whiskey",
     image: `${config.get("base_url")}/images/ingredients/whiskey.jpg`,
-    type: "Spirits",
+    category: "Spirits",
   }).save();
 
   //Liqueurs, Wines & Beer
+  //Liqueurs
   const cointreau = await new Ingredient({
     name: "Cointreau",
     image: `${config.get("base_url")}/images/ingredients/cointreau.jpg`,
-    type: "Liqueurs",
+    category: "Liqueurs",
   }).save();
   const drambuie = await new Ingredient({
     name: "Drambuie",
     image: `${config.get("base_url")}/images/ingredients/drambuie.jpg`,
-    type: "Liqueurs",
+    category: "Liqueurs",
   }).save();
   const coffee_liqueur = await new Ingredient({
     name: "Coffee Liqueur",
     image: `${config.get("base_url")}/images/ingredients/coffee_liqueur.jpg`,
-    type: "Liqueurs",
-  }).save();
-  const lillet_blanc = await new Ingredient({
-    name: "Lillet Blanc",
-    image: `${config.get("base_url")}/images/ingredients/lillet_blanc.jpg`,
-    type: "Liqueurs",
-  }).save();
-  const dry_vermouth = await new Ingredient({
-    name: "Dry Vermouth",
-    image: `${config.get("base_url")}/images/ingredients/dry_vermouth.jpg`,
-    type: "Liqueurs",
+    category: "Liqueurs",
   }).save();
   const campari = await new Ingredient({
     name: "Campari",
     image: `${config.get("base_url")}/images/ingredients/campari.jpg`,
-    type: "Liqueurs",
+    category: "Liqueurs",
+  }).save();
+  //Wines
+  const lillet_blanc = await new Ingredient({
+    name: "Lillet Blanc",
+    image: `${config.get("base_url")}/images/ingredients/lillet_blanc.jpg`,
+    category: "Wines",
+  }).save();
+  const dry_vermouth = await new Ingredient({
+    name: "Dry Vermouth",
+    image: `${config.get("base_url")}/images/ingredients/dry_vermouth.jpg`,
+    category: "Wines",
   }).save();
   const red_vermouth = await new Ingredient({
     name: "Red Vermouth",
     image: `${config.get("base_url")}/images/ingredients/red_vermouth.jpg`,
-    type: "Liqueurs",
+    category: "Wines",
   }).save();
   const champagne = await new Ingredient({
     name: "Champagne",
     image: `${config.get("base_url")}/images/ingredients/champagne.jpg`,
-    type: "Liqueurs",
+    category: "Wines",
   }).save();
   const red_wine = await new Ingredient({
     name: "Red Wine",
     image: `${config.get("base_url")}/images/ingredients/red_wine.jpg`,
-    type: "Liqueurs",
+    category: "Wines",
   }).save();
+  //Beers
   const beer = await new Ingredient({
     name: "Beer",
     image: `${config.get("base_url")}/images/ingredients/beer.jpg`,
-    type: "Liqueurs",
+    category: "Beers",
   }).save();
 
   //Mixers
@@ -124,68 +127,79 @@ async function run() {
   const cola = await new Ingredient({
     name: "Cola",
     image: `${config.get("base_url")}/images/ingredients/cola.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const soda_water = await new Ingredient({
     name: "Soda Water",
     image: `${config.get("base_url")}/images/ingredients/soda_water.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const tonic_water = await new Ingredient({
     name: "Tonic Water",
     image: `${config.get("base_url")}/images/ingredients/tonic_water.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const grapefruit_soda = await new Ingredient({
     name: "Grapefruit Soda",
     image: `${config.get("base_url")}/images/ingredients/grapefruit_soda.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   //Juices
   const orange_juice = await new Ingredient({
     name: "Orange Juice",
     image: `${config.get("base_url")}/images/ingredients/orange_juice.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const lime_juice = await new Ingredient({
     name: "Lime Juice",
     image: `${config.get("base_url")}/images/ingredients/lime_juice.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const lemon_juice = await new Ingredient({
     name: "Lemon Juice",
     image: `${config.get("base_url")}/images/ingredients/lemon_juice.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const cranberry_juice = await new Ingredient({
     name: "Cranberry Juice",
     image: `${config.get("base_url")}/images/ingredients/cranberry_juice.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const pineapple_juice = await new Ingredient({
     name: "Pineapple Juice",
     image: `${config.get("base_url")}/images/ingredients/pineapple_juice.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const tomato_juice = await new Ingredient({
     name: "Tomato Juice",
     image: `${config.get("base_url")}/images/ingredients/tomato_juice.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const clamato_juice = await new Ingredient({
     name: "Clamato Juice",
     image: `${config.get("base_url")}/images/ingredients/clamato_juice.jpg`,
-    type: "Mixers",
-  }).save();
-  const grenadine = await new Ingredient({
-    name: "Grenadine",
-    image: `${config.get("base_url")}/images/ingredients/grenadine.jpg`,
-    type: "Mixers",
+    category: "Mixers",
   }).save();
   const angostura_bitter = await new Ingredient({
     name: "Angostura Bitter",
     image: `${config.get("base_url")}/images/ingredients/angostura_bitter.jpg`,
-    type: "Mixers",
+    category: "Mixers",
+  }).save();
+  //Syrups
+  const grenadine = await new Ingredient({
+    name: "Grenadine",
+    image: `${config.get("base_url")}/images/ingredients/grenadine.jpg`,
+    category: "Syrups",
+  }).save();
+  const sugar_syrup = await new Ingredient({
+    name: "Sugar Syrup",
+    image: `${config.get("base_url")}/images/ingredients/sugar_syrup.jpg`,
+    category: "Syrups",
+  }).save();
+  const orgeat_syrup = await new Ingredient({
+    name: "Orgeat Syrup",
+    image: `${config.get("base_url")}/images/ingredients/orgeat_syrup.jpg`,
+    category: "Syrups",
   }).save();
 
   //Others
@@ -193,95 +207,84 @@ async function run() {
   const lemon = await new Ingredient({
     name: "Lemon",
     image: `${config.get("base_url")}/images/ingredients/lemon.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const lime = await new Ingredient({
     name: "Lime",
     image: `${config.get("base_url")}/images/ingredients/lime.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const fruit_mix = await new Ingredient({
     name: "Fruit Mix",
     image: `${config.get("base_url")}/images/ingredients/fruit_mix.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const mint = await new Ingredient({
     name: "Mint",
     image: `${config.get("base_url")}/images/ingredients/mint.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const olives = await new Ingredient({
     name: "Olives",
     image: `${config.get("base_url")}/images/ingredients/olives.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const celery = await new Ingredient({
     name: "Celery",
     image: `${config.get("base_url")}/images/ingredients/celery.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const egg_white = await new Ingredient({
     name: "Egg White",
     image: `${config.get("base_url")}/images/ingredients/egg_white.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const coconut_cream = await new Ingredient({
     name: "Coconut Cream",
     image: `${config.get("base_url")}/images/ingredients/coconut_cream.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const fresh_cream = await new Ingredient({
     name: "Cream",
     image: `${config.get("base_url")}/images/ingredients/fresh_cream.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const coffee = await new Ingredient({
     name: "Coffee",
     image: `${config.get("base_url")}/images/ingredients/coffee.jpg`,
-    type: "Others",
-  }).save();
-  //Syrups
-  const sugar_syrup = await new Ingredient({
-    name: "Sugar Syrup",
-    image: `${config.get("base_url")}/images/ingredients/sugar_syrup.jpg`,
-    type: "Others",
-  }).save();
-  const orgeat_syrup = await new Ingredient({
-    name: "Orgeat Syrup",
-    image: `${config.get("base_url")}/images/ingredients/orgeat_syrup.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   //Sauces
   const worcestershire = await new Ingredient({
     name: "Worcester shire",
     image: `${config.get("base_url")}/images/ingredients/worcestershire.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const hot_sauce = await new Ingredient({
     name: "Hot Sauce",
     image: `${config.get("base_url")}/images/ingredients/hot_sauce.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   //Powders
   const sugar = await new Ingredient({
     name: "Sugar",
     image: `${config.get("base_url")}/images/ingredients/sugar.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const salt = await new Ingredient({
     name: "Salt",
     image: `${config.get("base_url")}/images/ingredients/salt.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const pepper = await new Ingredient({
     name: "Pepper",
     image: `${config.get("base_url")}/images/ingredients/pepper.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
   const chilly_powder = await new Ingredient({
     name: "Chilly Powder",
     image: `${config.get("base_url")}/images/ingredients/chilly_powder.jpg`,
-    type: "Others",
+    category: "Others",
   }).save();
 
   //Cocktails

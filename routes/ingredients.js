@@ -6,8 +6,13 @@ const validateObjectId = require("../middleware/validateObjectId");
 const validateBody = require("../middleware/validateBody");
 
 router.get("/", async (req, res) => {
-  const type = req.query.type;
-  const query = type ? { type } : {};
+  let query = null;
+
+  const queryArray = Object.keys(req.query).map((key) => {
+    return { category: key };
+  });
+  if (queryArray.length > 0) query = { $or: queryArray };
+
   const ingredients = await Ingredient.find(query).sort("name");
 
   res.send(ingredients);

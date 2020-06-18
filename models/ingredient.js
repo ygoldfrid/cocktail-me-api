@@ -8,7 +8,7 @@ const ingredientSchema = new mongoose.Schema({
     minlength: 3,
     maxlength: 50,
   },
-  type: {
+  category: {
     type: String,
     required: true,
     minlength: 3,
@@ -33,7 +33,7 @@ const Ingredient = mongoose.model("Ingredient", ingredientSchema);
 function validateIngredient(ingredient) {
   const schema = {
     name: Joi.string().min(3).max(50).required(),
-    type: Joi.string().min(3).max(50).required(),
+    category: Joi.string().min(3).max(50).required(),
     image: Joi.string().min(5).max(255).required(),
   };
 
