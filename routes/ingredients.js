@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", validateObjectId, async (req, res) => {
   const ingredient = await Ingredient.findById(req.params.id).populate(
     "alternatives",
-    "_id name image"
+    "name image"
   );
   if (!ingredient) return res.status(404).send("Ingredient not found");
 
@@ -32,10 +32,23 @@ router.get("/:id/cocktails", validateObjectId, async (req, res) => {
   const ingredient = await Ingredient.findById(req.params.id);
   if (!ingredient) return res.status(404).send("Ingredient not found");
 
+  const backAlternatives = (
+    await Ingredient.findById(req.params.id).populate("backAlternatives")
+  ).backAlternatives;
+
   const cocktails = await Cocktail.find({
-    "components.ingredient": {
-      $in: [ingredient._id, ...ingredient.alternatives],
-    },
+    $or: [
+      {
+        "components.ingredient": {
+          $in: [ingredient._id],
+        },
+      },
+      {
+        "components.ingredient": {
+          $in: backAlternatives,
+        },
+      },
+    ],
   });
 
   res.status(200).send(cocktails);

@@ -28,6 +28,18 @@ const ingredientSchema = new mongoose.Schema({
   ],
 });
 
+ingredientSchema.virtual(
+  "backAlternatives",
+  {
+    ref: "Ingredient",
+    localField: "_id",
+    foreignField: "alternatives",
+
+    justOne: false,
+  },
+  { toJSON: { virtuals: true } }
+);
+
 const Ingredient = mongoose.model("Ingredient", ingredientSchema);
 
 function validateIngredient(ingredient) {
