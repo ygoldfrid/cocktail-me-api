@@ -1,5 +1,5 @@
 {
   "jwtPrivateKey": "cocktailme_jwtPrivateKey",
   "db": "cocktailme_db",
-  "base_url": "http://yaniv-cocktailme.herokuapp.com"
+  "base_url": "http://yaniv-cocktailme-api.herokuapp.com"
 }
