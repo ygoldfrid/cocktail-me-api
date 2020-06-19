@@ -17,51 +17,61 @@ async function run() {
 
   //Spirits
   const cachaca = await new Ingredient({
+    _id: "5eecfb00f3aa0f0b0896e06e",
     name: "Cachaça",
     image: `${config.get("base_url")}/images/ingredients/cachaca.jpg`,
     category: "Spirits",
   }).save();
   const cognac = await new Ingredient({
+    _id: "5eecfb641e34422b4039db9c",
     name: "Cognac",
     image: `${config.get("base_url")}/images/ingredients/cognac.jpg`,
     category: "Spirits",
   }).save();
   const brandy = await new Ingredient({
+    _id: "5eecfb641e34422b4039db9d",
     name: "Brandy",
     image: `${config.get("base_url")}/images/ingredients/brandy.jpg`,
     category: "Spirits",
   }).save();
   const gin = await new Ingredient({
+    _id: "5eecfb641e34422b4039db9e",
     name: "Gin",
     image: `${config.get("base_url")}/images/ingredients/gin.jpg`,
     category: "Spirits",
   }).save();
   const pisco = await new Ingredient({
+    _id: "5eecfb641e34422b4039db9f",
     name: "Pisco",
     image: `${config.get("base_url")}/images/ingredients/pisco.jpg`,
     category: "Spirits",
   }).save();
   const rum = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba0",
     name: "Rum",
     image: `${config.get("base_url")}/images/ingredients/rum.jpg`,
     category: "Spirits",
   }).save();
   const tequila = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba1",
     name: "Tequila",
     image: `${config.get("base_url")}/images/ingredients/tequila.jpg`,
     category: "Spirits",
   }).save();
   const vodka = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba2",
     name: "Vodka",
     image: `${config.get("base_url")}/images/ingredients/vodka.jpg`,
     category: "Spirits",
   }).save();
   const white_rum = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba3",
     name: "White Rum",
     image: `${config.get("base_url")}/images/ingredients/white_rum.jpg`,
     category: "Spirits",
   }).save();
   const whiskey = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba4",
     name: "Whiskey",
     image: `${config.get("base_url")}/images/ingredients/whiskey.jpg`,
     category: "Spirits",
@@ -70,53 +80,63 @@ async function run() {
   //Liqueurs, Wines & Beer
   //Liqueurs
   const cointreau = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba5",
     name: "Cointreau",
     image: `${config.get("base_url")}/images/ingredients/cointreau.jpg`,
     category: "Liqueurs",
   }).save();
   const drambuie = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba6",
     name: "Drambuie",
     image: `${config.get("base_url")}/images/ingredients/drambuie.jpg`,
     category: "Liqueurs",
   }).save();
   const coffee_liqueur = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba7",
     name: "Coffee Liqueur",
     image: `${config.get("base_url")}/images/ingredients/coffee_liqueur.jpg`,
     category: "Liqueurs",
   }).save();
   const campari = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba8",
     name: "Campari",
     image: `${config.get("base_url")}/images/ingredients/campari.jpg`,
     category: "Liqueurs",
   }).save();
   //Wines
   const lillet_blanc = await new Ingredient({
+    _id: "5eecfb641e34422b4039dba9",
     name: "Lillet Blanc",
     image: `${config.get("base_url")}/images/ingredients/lillet_blanc.jpg`,
     category: "Wines",
   }).save();
   const dry_vermouth = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbaa",
     name: "Dry Vermouth",
     image: `${config.get("base_url")}/images/ingredients/dry_vermouth.jpg`,
     category: "Wines",
   }).save();
   const red_vermouth = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbab",
     name: "Red Vermouth",
     image: `${config.get("base_url")}/images/ingredients/red_vermouth.jpg`,
     category: "Wines",
   }).save();
   const champagne = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbac",
     name: "Champagne",
     image: `${config.get("base_url")}/images/ingredients/champagne.jpg`,
     category: "Wines",
   }).save();
   const red_wine = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbad",
     name: "Red Wine",
     image: `${config.get("base_url")}/images/ingredients/red_wine.jpg`,
     category: "Wines",
   }).save();
   //Beers
   const beer = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbae",
     name: "Beer",
     image: `${config.get("base_url")}/images/ingredients/beer.jpg`,
     category: "Beers",
@@ -125,78 +145,93 @@ async function run() {
   //Mixers
   //Fizzy
   const cola = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbaf",
     name: "Cola",
     image: `${config.get("base_url")}/images/ingredients/cola.jpg`,
     category: "Mixers",
   }).save();
   const soda_water = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb0",
     name: "Soda Water",
     image: `${config.get("base_url")}/images/ingredients/soda_water.jpg`,
     category: "Mixers",
   }).save();
   const tonic_water = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb1",
     name: "Tonic Water",
     image: `${config.get("base_url")}/images/ingredients/tonic_water.jpg`,
     category: "Mixers",
   }).save();
   const grapefruit_soda = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb2",
     name: "Grapefruit Soda",
     image: `${config.get("base_url")}/images/ingredients/grapefruit_soda.jpg`,
     category: "Mixers",
   }).save();
   //Juices
   const orange_juice = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb3",
     name: "Orange Juice",
     image: `${config.get("base_url")}/images/ingredients/orange_juice.jpg`,
     category: "Mixers",
   }).save();
   const lime_juice = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb4",
     name: "Lime Juice",
     image: `${config.get("base_url")}/images/ingredients/lime_juice.jpg`,
     category: "Mixers",
   }).save();
   const lemon_juice = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb5",
     name: "Lemon Juice",
     image: `${config.get("base_url")}/images/ingredients/lemon_juice.jpg`,
     category: "Mixers",
   }).save();
   const cranberry_juice = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb6",
     name: "Cranberry Juice",
     image: `${config.get("base_url")}/images/ingredients/cranberry_juice.jpg`,
     category: "Mixers",
   }).save();
   const pineapple_juice = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb7",
     name: "Pineapple Juice",
     image: `${config.get("base_url")}/images/ingredients/pineapple_juice.jpg`,
     category: "Mixers",
   }).save();
   const tomato_juice = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb8",
     name: "Tomato Juice",
     image: `${config.get("base_url")}/images/ingredients/tomato_juice.jpg`,
     category: "Mixers",
   }).save();
   const clamato_juice = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbb9",
     name: "Clamato Juice",
     image: `${config.get("base_url")}/images/ingredients/clamato_juice.jpg`,
     category: "Mixers",
   }).save();
   const angostura_bitter = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbba",
     name: "Angostura Bitter",
     image: `${config.get("base_url")}/images/ingredients/angostura_bitter.jpg`,
     category: "Mixers",
   }).save();
   //Syrups
   const grenadine = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbbb",
     name: "Grenadine",
     image: `${config.get("base_url")}/images/ingredients/grenadine.jpg`,
     category: "Syrups",
   }).save();
   const sugar_syrup = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbbc",
     name: "Sugar Syrup",
     image: `${config.get("base_url")}/images/ingredients/sugar_syrup.jpg`,
     category: "Syrups",
   }).save();
   const orgeat_syrup = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbbd",
     name: "Orgeat Syrup",
     image: `${config.get("base_url")}/images/ingredients/orgeat_syrup.jpg`,
     category: "Syrups",
@@ -205,83 +240,99 @@ async function run() {
   //Others
   //Fresh
   const lemon = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbbe",
     name: "Lemon",
     image: `${config.get("base_url")}/images/ingredients/lemon.jpg`,
     category: "Others",
   }).save();
   const lime = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbbf",
     name: "Lime",
     image: `${config.get("base_url")}/images/ingredients/lime.jpg`,
     category: "Others",
   }).save();
   const fruit_mix = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc0",
     name: "Fruit Mix",
     image: `${config.get("base_url")}/images/ingredients/fruit_mix.jpg`,
     category: "Others",
   }).save();
   const mint = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc1",
     name: "Mint",
     image: `${config.get("base_url")}/images/ingredients/mint.jpg`,
     category: "Others",
   }).save();
   const olives = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc2",
     name: "Olives",
     image: `${config.get("base_url")}/images/ingredients/olives.jpg`,
     category: "Others",
   }).save();
   const celery = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc3",
     name: "Celery",
     image: `${config.get("base_url")}/images/ingredients/celery.jpg`,
     category: "Others",
   }).save();
   const egg_white = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc4",
     name: "Egg White",
     image: `${config.get("base_url")}/images/ingredients/egg_white.jpg`,
     category: "Others",
   }).save();
   const coconut_cream = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc5",
     name: "Coconut Cream",
     image: `${config.get("base_url")}/images/ingredients/coconut_cream.jpg`,
     category: "Others",
   }).save();
   const fresh_cream = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc6",
     name: "Cream",
     image: `${config.get("base_url")}/images/ingredients/fresh_cream.jpg`,
     category: "Others",
   }).save();
   const coffee = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc7",
     name: "Coffee",
     image: `${config.get("base_url")}/images/ingredients/coffee.jpg`,
     category: "Others",
   }).save();
   //Sauces
   const worcestershire = await new Ingredient({
-    name: "Worcester shire",
+    _id: "5eecfb641e34422b4039dbc8",
+    name: "Worcestershire Sauce",
     image: `${config.get("base_url")}/images/ingredients/worcestershire.jpg`,
     category: "Others",
   }).save();
   const hot_sauce = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbc9",
     name: "Hot Sauce",
     image: `${config.get("base_url")}/images/ingredients/hot_sauce.jpg`,
     category: "Others",
   }).save();
   //Powders
   const sugar = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbca",
     name: "Sugar",
     image: `${config.get("base_url")}/images/ingredients/sugar.jpg`,
     category: "Others",
   }).save();
   const salt = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbcb",
     name: "Salt",
     image: `${config.get("base_url")}/images/ingredients/salt.jpg`,
     category: "Others",
   }).save();
   const pepper = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbcc",
     name: "Pepper",
     image: `${config.get("base_url")}/images/ingredients/pepper.jpg`,
     category: "Others",
   }).save();
   const chilly_powder = await new Ingredient({
+    _id: "5eecfb641e34422b4039dbcd",
     name: "Chilly Powder",
     image: `${config.get("base_url")}/images/ingredients/chilly_powder.jpg`,
     category: "Others",
@@ -289,6 +340,7 @@ async function run() {
 
   //Cocktails
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbce",
     name: "Michelada",
     image: `${config.get("base_url")}/images/cocktails/michelada.jpg`,
     preparation: [
@@ -309,6 +361,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbd7",
     name: "Original Margarita",
     image: `${config.get("base_url")}/images/cocktails/margarita.jpg`,
     preparation: [
@@ -323,6 +376,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbdc",
     name: "Cuba Libre",
     image: `${config.get("base_url")}/images/cocktails/cuba_libre.jpg`,
     preparation: [
@@ -336,6 +390,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbe0",
     name: "Pisco Sour",
     image: `${config.get("base_url")}/images/cocktails/pisco_sour.jpg`,
     preparation: [
@@ -350,6 +405,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbe5",
     name: "Piscola",
     image: `${config.get("base_url")}/images/cocktails/piscola.jpg`,
     preparation: [
@@ -362,6 +418,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbe8",
     name: "Tequila Sunrise",
     image: `${config.get("base_url")}/images/cocktails/tequila_sunrise.jpg`,
     preparation: [
@@ -377,6 +434,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbec",
     name: "Mojito",
     image: `${config.get("base_url")}/images/cocktails/mojito.jpg`,
     preparation: [
@@ -395,6 +453,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbf2",
     name: "Gin & Tonic",
     image: `${config.get("base_url")}/images/cocktails/gin_and_tonic.jpg`,
     preparation: ["In a glass filled with ice cubes, add gin and tonic."],
@@ -404,6 +463,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbf5",
     name: "Martini",
     image: `${config.get("base_url")}/images/cocktails/martini.jpg`,
     preparation: [
@@ -418,6 +478,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbf9",
     name: "Vodka Martini",
     image: `${config.get("base_url")}/images/cocktails/vodka_martini.jpg`,
     preparation: [
@@ -432,6 +493,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dbfd",
     name: "Caipirinha",
     image: `${config.get("base_url")}/images/cocktails/caipirinha.jpg`,
     preparation: [
@@ -445,6 +507,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc01",
     name: "Caipiroska",
     image: `${config.get("base_url")}/images/cocktails/caipiroska.jpg`,
     preparation: [
@@ -458,6 +521,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc05",
     name: "Side Car",
     image: `${config.get("base_url")}/images/cocktails/side_car.jpg`,
     preparation: [
@@ -471,6 +535,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc09",
     name: "Long Island Iced Tea",
     image: `${config.get("base_url")}/images/cocktails/long_island.jpg`,
     preparation: [
@@ -489,6 +554,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc12",
     name: "Cosmopolitan",
     image: `${config.get("base_url")}/images/cocktails/cosmopolitan.jpg`,
     preparation: [
@@ -504,6 +570,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc17",
     name: "Daiquiri",
     image: `${config.get("base_url")}/images/cocktails/daiquiri.jpg`,
     preparation: [
@@ -519,6 +586,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc1b",
     name: "Mai Tai",
     image: `${config.get("base_url")}/images/cocktails/mai_tai.jpg`,
     preparation: [
@@ -535,7 +603,8 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
-    name: "Pina Colada",
+    _id: "5eecfb641e34422b4039dc21",
+    name: "Piña Colada",
     image: `${config.get("base_url")}/images/cocktails/pina_colada.jpg`,
     preparation: [
       "Blend all the ingredients with ice in an electric blender.",
@@ -548,6 +617,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc25",
     name: "Paloma",
     image: `${config.get("base_url")}/images/cocktails/paloma.jpg`,
     preparation: ["Stir together and serve over ice."],
@@ -557,6 +627,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc28",
     name: "Black Russian",
     image: `${config.get("base_url")}/images/cocktails/black_russian.jpg`,
     preparation: [
@@ -569,6 +640,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc2b",
     name: "Bloody Mary",
     image: `${config.get("base_url")}/images/cocktails/bloody_mary.jpg`,
     preparation: [
@@ -586,6 +658,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc33",
     name: "Irish Coffee",
     image: `${config.get("base_url")}/images/cocktails/irish_coffee.jpg`,
     preparation: [
@@ -601,6 +674,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc38",
     name: "Manhattan",
     image: `${config.get("base_url")}/images/cocktails/manhattan.jpg`,
     preparation: [
@@ -613,6 +687,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc3c",
     name: "Old Fashioned",
     image: `${config.get("base_url")}/images/cocktails/old_fashioned.jpg`,
     preparation: [
@@ -628,6 +703,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc40",
     name: "Rusty Nail",
     image: `${config.get("base_url")}/images/cocktails/rusty_nail.jpg`,
     preparation: [
@@ -641,6 +717,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc43",
     name: "Whiskey Sour",
     image: `${config.get("base_url")}/images/cocktails/whiskey_sour.jpg`,
     preparation: [
@@ -654,6 +731,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc47",
     name: "Vesper",
     image: `${config.get("base_url")}/images/cocktails/vesper.jpg`,
     preparation: [
@@ -667,6 +745,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc4b",
     name: "Negroni",
     image: `${config.get("base_url")}/images/cocktails/negroni.jpg`,
     preparation: ["Stir into glass over ice, garnish and serve."],
@@ -677,6 +756,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc4f",
     name: "John Collins",
     image: `${config.get("base_url")}/images/cocktails/john_collins.jpg`,
     preparation: [
@@ -693,6 +773,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc54",
     name: "Mimosa",
     image: `${config.get("base_url")}/images/cocktails/mimosa.jpg`,
     preparation: [
@@ -704,6 +785,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc57",
     name: "Americano",
     image: `${config.get("base_url")}/images/cocktails/americano.jpg`,
     preparation: [
@@ -717,6 +799,7 @@ async function run() {
     ],
   }).save();
   await new Cocktail({
+    _id: "5eecfb641e34422b4039dc5b",
     name: "Sangria",
     image: `${config.get("base_url")}/images/cocktails/sangria.jpg`,
     preparation: [
