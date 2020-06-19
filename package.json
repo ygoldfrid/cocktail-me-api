@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --verbose --coverage --runInBand --detectOpenHandles"
+    "test": "jest --watchAll --verbose --coverage --runInBand --detectOpenHandles",
+    "start": "node index.js"
+  },
+  "engine": {
+    "node": "12.16.3"
   },
   "keywords": [],
   "author": "",

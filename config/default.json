@@ -1,6 +1,6 @@
 {
   "jwtPrivateKey": "",
-  "base_url": "http://localhost:3900",
   "db": "mongodb://localhost/cocktailme",
+  "base_url": "http://localhost:3900",
   "port": "3900"
 }
