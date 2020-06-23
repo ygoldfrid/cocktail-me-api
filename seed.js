@@ -789,7 +789,7 @@ async function run() {
     name: "Americano",
     image: `${config.get("base_url")}/images/cocktails/americano.jpg`,
     preparation: [
-      "Pour the Campari and vermouth over ice into a highball glass.",
+      "Pour the Campari and Vermouth over ice into a highball glass.",
       "Add a splash of soda water and garnish with half orange slice and a lemon twist.",
     ],
     components: [
