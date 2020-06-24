@@ -829,13 +829,13 @@ async function run() {
   await sugar.save();
   sugar_syrup.alternatives = [sugar];
   await sugar_syrup.save();
-  lime.alternatives = [lime_juice, lemon_juice, lemon];
+  lime.alternatives = [lemon];
   await lime.save();
-  lemon.alternatives = [lemon_juice, lime_juice, lime];
+  lemon.alternatives = [lime];
   await lemon.save();
-  lime_juice.alternatives = [lemon_juice];
+  lime_juice.alternatives = [lemon_juice, lime, lemon];
   await lime_juice.save();
-  lemon_juice.alternatives = [lime_juice];
+  lemon_juice.alternatives = [lime_juice, lemon, lime];
   await lemon_juice.save();
   clamato_juice.alternatives = [tomato_juice];
   await clamato_juice.save();
