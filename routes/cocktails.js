@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
   const cocktails = await Cocktail.find()
     .sort("name")
     .select("-__v")
-    .populate("components.ingredient", "_id name");
+    .populate("components.ingredient", "_id name alternatives");
   res.send(cocktails);
 });
 
