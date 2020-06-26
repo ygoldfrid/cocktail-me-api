@@ -362,7 +362,7 @@ async function run() {
   }).save();
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbd7",
-    name: "Original Margarita",
+    name: "Margarita",
     image: `${config.get("base_url")}/images/cocktails/margarita.jpg`,
     preparation: [
       "Pour all ingredients into shaker with ice.",
@@ -839,6 +839,8 @@ async function run() {
   await lemon_juice.save();
   clamato_juice.alternatives = [tomato_juice];
   await clamato_juice.save();
+  tomato_juice.alternatives = [clamato_juice];
+  await tomato_juice.save();
 
   //Clean up
   mongoose.disconnect();
