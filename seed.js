@@ -34,6 +34,12 @@ async function run() {
     image: `${config.get("base_url")}/images/ingredients/brandy.jpg`,
     category: "Spirits",
   }).save();
+  const bourbon = await new Ingredient({
+    _id: "5ef6816942f15a0fe0f49529",
+    name: "Bourbon",
+    image: `${config.get("base_url")}/images/ingredients/bourbon.jpg`,
+    category: "Spirits",
+  }).save();
   const gin = await new Ingredient({
     _id: "5eecfb641e34422b4039db9e",
     name: "Gin",
@@ -132,6 +138,12 @@ async function run() {
     _id: "5eecfb641e34422b4039dbad",
     name: "Red Wine",
     image: `${config.get("base_url")}/images/ingredients/red_wine.jpg`,
+    category: "Wines",
+  }).save();
+  const white_wine = await new Ingredient({
+    _id: "5ef6816942f15a0fe0f4953a",
+    name: "White Wine",
+    image: `${config.get("base_url")}/images/ingredients/white_wine.jpg`,
     category: "Wines",
   }).save();
   //Beers
@@ -697,7 +709,7 @@ async function run() {
       "Garnish with orange twist, and a cocktail cherry.",
     ],
     components: [
-      { ingredient: whiskey, measure: "45 ml" },
+      { ingredient: bourbon, measure: "45 ml" },
       { ingredient: angostura_bitter, measure: "2 dashes" },
       { ingredient: sugar, measure: "1 ts" },
     ],
@@ -725,7 +737,7 @@ async function run() {
       "Strain into chilled glass, garnish and serve.",
     ],
     components: [
-      { ingredient: whiskey, measure: "45 ml" },
+      { ingredient: bourbon, measure: "45 ml" },
       { ingredient: lemon_juice, measure: "30 ml" },
       { ingredient: sugar_syrup, measure: "15 ml" },
     ],
@@ -815,6 +827,16 @@ async function run() {
       { ingredient: sugar, measure: "to taste" },
     ],
   }).save();
+  await new Cocktail({
+    _id: "5ef68228cb806827f42ed14a",
+    name: "Screwdriver",
+    image: `${config.get("base_url")}/images/cocktails/screwdriver.jpg`,
+    preparation: ["Mix in a highball glass with ice.", "Garnish and serve."],
+    components: [
+      { ingredient: vodka, measure: "50 ml" },
+      { ingredient: orange_juice, measure: "100 ml" },
+    ],
+  }).save();
 
   //Alternatives
   cognac.alternatives = [brandy];
@@ -841,6 +863,12 @@ async function run() {
   await clamato_juice.save();
   tomato_juice.alternatives = [clamato_juice];
   await tomato_juice.save();
+  lillet_blanc.alternatives = [white_wine];
+  await lillet_blanc.save();
+  bourbon.alternatives = [whiskey];
+  await bourbon.save();
+  whiskey.alternatives = [bourbon];
+  await whiskey.save();
 
   //Clean up
   mongoose.disconnect();
