@@ -91,6 +91,12 @@ async function run() {
     image: `${config.get("base_url")}/images/ingredients/cointreau.jpg`,
     category: "Liqueurs",
   }).save();
+  const aperol = await new Ingredient({
+    _id: "5ef7558895ed7456400cd11d",
+    name: "Aperol",
+    image: `${config.get("base_url")}/images/ingredients/aperol.jpg`,
+    category: "Liqueurs",
+  }).save();
   const drambuie = await new Ingredient({
     _id: "5eecfb641e34422b4039dba6",
     name: "Drambuie",
@@ -132,6 +138,12 @@ async function run() {
     _id: "5eecfb641e34422b4039dbac",
     name: "Champagne",
     image: `${config.get("base_url")}/images/ingredients/champagne.jpg`,
+    category: "Wines",
+  }).save();
+  const prosecco = await new Ingredient({
+    _id: "5ef7558895ed7456400cd125",
+    name: "Prosecco",
+    image: `${config.get("base_url")}/images/ingredients/prosecco.jpg`,
     category: "Wines",
   }).save();
   const red_wine = await new Ingredient({
@@ -351,6 +363,20 @@ async function run() {
   }).save();
 
   //Cocktails
+  await new Cocktail({
+    _id: "5ef7558895ed7456400cd148",
+    name: "Aperol Spritz",
+    image: `${config.get("base_url")}/images/cocktails/aperol_spritz.jpg`,
+    preparation: [
+      "Build all ingredients into a wine glass filled with ice.",
+      "Stir gently.",
+    ],
+    components: [
+      { ingredient: prosecco, measure: "90 ml" },
+      { ingredient: aperol, measure: "60 ml" },
+      { ingredient: soda_water, measure: "a splash" },
+    ],
+  }).save();
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbce",
     name: "Michelada",
@@ -869,6 +895,8 @@ async function run() {
   await bourbon.save();
   whiskey.alternatives = [bourbon];
   await whiskey.save();
+  prosecco.alternatives = [champagne];
+  await prosecco.save();
 
   //Clean up
   mongoose.disconnect();
