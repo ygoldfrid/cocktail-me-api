@@ -662,6 +662,7 @@ async function run() {
     components: [
       { ingredient: tequila, measure: "50 ml" },
       { ingredient: grapefruit_soda, measure: "150 ml" },
+      { ingredient: lime, measure: "to taste" },
     ],
   }).save();
   await new Cocktail({
