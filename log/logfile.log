@@ -27,3 +27,7 @@
 {"level":"info","message":"Connected to mongodb://localhost/cocktailme...","timestamp":"2020-06-26T23:17:45.522Z"}
 {"level":"info","message":"Listening on port 3900...","timestamp":"2020-06-26T23:19:02.862Z"}
 {"level":"info","message":"Connected to mongodb://localhost/cocktailme...","timestamp":"2020-06-26T23:19:04.904Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-06-26T23:57:20.610Z"}
+{"level":"info","message":"Connected to mongodb://localhost/cocktailme...","timestamp":"2020-06-26T23:57:22.643Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-06-27T01:06:31.104Z"}
+{"level":"info","message":"Connected to mongodb://localhost/cocktailme...","timestamp":"2020-06-27T01:06:33.157Z"}
