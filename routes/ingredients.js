@@ -13,16 +13,18 @@ router.get("/", async (req, res) => {
   });
   if (queryArray.length > 0) query = { $or: queryArray };
 
-  const ingredients = await Ingredient.find(query).sort("name");
+  const ingredients = await Ingredient.find(query)
+    .sort("name")
+    .select("-__v -images._id")
+    .populate("alternatives", "name images.url images.thumbnailUrl");
 
   res.send(ingredients);
 });
 
 router.get("/:id", validateObjectId, async (req, res) => {
-  const ingredient = await Ingredient.findById(req.params.id).populate(
-    "alternatives",
-    "name image"
-  );
+  const ingredient = await Ingredient.findById(req.params.id)
+    .select("-__v -images._id")
+    .populate("alternatives", "name images.url images.thumbnailUrl");
   if (!ingredient) return res.status(404).send("Ingredient not found");
 
   res.status(200).send(ingredient);
@@ -49,6 +51,13 @@ router.get("/:id/cocktails", validateObjectId, async (req, res) => {
         },
       },
     ],
+  }).populate({
+    path: "components.ingredient",
+    select: "_id name images.url images.thumbnailUrl measure alternatives",
+    populate: {
+      select: "_id name images.url images.thumbnailUrl",
+      path: "alternatives",
+    },
   });
 
   res.status(200).send(cocktails);

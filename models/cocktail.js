@@ -14,12 +14,22 @@ const cocktailSchema = new mongoose.Schema({
     minlength: 10,
     maxlength: 1023,
   },
-  image: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 255,
-  },
+  images: [
+    {
+      url: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 255,
+      },
+      thumbnailUrl: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 255,
+      },
+    },
+  ],
   components: [
     {
       ingredient: {
@@ -40,8 +50,16 @@ const Cocktail = mongoose.model("Cocktail", cocktailSchema);
 function validateCocktail(cocktail) {
   const schema = {
     name: Joi.string().min(3).max(50).required(),
-    image: Joi.string().min(5).max(255).required(),
     preparation: Joi.array().items(Joi.string().min(10).max(1023)).required(),
+    images: Joi.array()
+      .items(
+        Joi.object({
+          url: Joi.string().min(1).max(255).required(),
+          thumbnailUrl: Joi.string().min(1).max(255).required(),
+        })
+      )
+      .min(2)
+      .required(),
     components: Joi.array()
       .items(
         Joi.object({

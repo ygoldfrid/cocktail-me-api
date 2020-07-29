@@ -19,67 +19,122 @@ async function run() {
   const cachaca = await new Ingredient({
     _id: "5eecfb00f3aa0f0b0896e06e",
     name: "Cachaça",
-    image: `${config.get("base_url")}/images/ingredients/cachaca.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/cachaca_full.jpg",
+        thumbnailUrl: "/images/ingredients/cachaca_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const cognac = await new Ingredient({
     _id: "5eecfb641e34422b4039db9c",
     name: "Cognac",
-    image: `${config.get("base_url")}/images/ingredients/cognac.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/cognac_full.jpg",
+        thumbnailUrl: "/images/ingredients/cognac_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const brandy = await new Ingredient({
     _id: "5eecfb641e34422b4039db9d",
     name: "Brandy",
-    image: `${config.get("base_url")}/images/ingredients/brandy.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/brandy_full.jpg",
+        thumbnailUrl: "/images/ingredients/brandy_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const bourbon = await new Ingredient({
     _id: "5ef6816942f15a0fe0f49529",
     name: "Bourbon",
-    image: `${config.get("base_url")}/images/ingredients/bourbon.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/bourbon_full.jpg",
+        thumbnailUrl: "/images/ingredients/bourbon_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const gin = await new Ingredient({
     _id: "5eecfb641e34422b4039db9e",
     name: "Gin",
-    image: `${config.get("base_url")}/images/ingredients/gin.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/gin_full.jpg",
+        thumbnailUrl: "/images/ingredients/gin_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const pisco = await new Ingredient({
     _id: "5eecfb641e34422b4039db9f",
     name: "Pisco",
-    image: `${config.get("base_url")}/images/ingredients/pisco.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/pisco_full.jpg",
+        thumbnailUrl: "/images/ingredients/pisco_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const rum = await new Ingredient({
     _id: "5eecfb641e34422b4039dba0",
     name: "Rum",
-    image: `${config.get("base_url")}/images/ingredients/rum.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/rum_full.jpg",
+        thumbnailUrl: "/images/ingredients/rum_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const tequila = await new Ingredient({
     _id: "5eecfb641e34422b4039dba1",
     name: "Tequila",
-    image: `${config.get("base_url")}/images/ingredients/tequila.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/tequila_full.jpg",
+        thumbnailUrl: "/images/ingredients/tequila_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const vodka = await new Ingredient({
     _id: "5eecfb641e34422b4039dba2",
     name: "Vodka",
-    image: `${config.get("base_url")}/images/ingredients/vodka.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/vodka_full.jpg",
+        thumbnailUrl: "/images/ingredients/vodka_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const white_rum = await new Ingredient({
     _id: "5eecfb641e34422b4039dba3",
     name: "White Rum",
-    image: `${config.get("base_url")}/images/ingredients/white_rum.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/white_rum_full.jpg",
+        thumbnailUrl: "/images/ingredients/white_rum_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
   const whiskey = await new Ingredient({
     _id: "5eecfb641e34422b4039dba4",
     name: "Whiskey",
-    image: `${config.get("base_url")}/images/ingredients/whiskey.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/whiskey_full.jpg",
+        thumbnailUrl: "/images/ingredients/whiskey_thumb.jpg",
+      },
+    ],
     category: "Spirits",
   }).save();
 
@@ -88,81 +143,146 @@ async function run() {
   const cointreau = await new Ingredient({
     _id: "5eecfb641e34422b4039dba5",
     name: "Cointreau",
-    image: `${config.get("base_url")}/images/ingredients/cointreau.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/cointreau_full.jpg",
+        thumbnailUrl: "/images/ingredients/cointreau_thumb.jpg",
+      },
+    ],
     category: "Liqueurs",
   }).save();
   const aperol = await new Ingredient({
     _id: "5ef7558895ed7456400cd11d",
     name: "Aperol",
-    image: `${config.get("base_url")}/images/ingredients/aperol.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/aperol_full.jpg",
+        thumbnailUrl: "/images/ingredients/aperol_thumb.jpg",
+      },
+    ],
     category: "Liqueurs",
   }).save();
   const drambuie = await new Ingredient({
     _id: "5eecfb641e34422b4039dba6",
     name: "Drambuie",
-    image: `${config.get("base_url")}/images/ingredients/drambuie.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/drambuie_full.jpg",
+        thumbnailUrl: "/images/ingredients/drambuie_thumb.jpg",
+      },
+    ],
     category: "Liqueurs",
   }).save();
   const coffee_liqueur = await new Ingredient({
     _id: "5eecfb641e34422b4039dba7",
     name: "Coffee Liqueur",
-    image: `${config.get("base_url")}/images/ingredients/coffee_liqueur.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/coffee_liqueur_full.jpg",
+        thumbnailUrl: "/images/ingredients/coffee_liqueur_thumb.jpg",
+      },
+    ],
     category: "Liqueurs",
   }).save();
   const campari = await new Ingredient({
     _id: "5eecfb641e34422b4039dba8",
     name: "Campari",
-    image: `${config.get("base_url")}/images/ingredients/campari.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/campari_full.jpg",
+        thumbnailUrl: "/images/ingredients/campari_thumb.jpg",
+      },
+    ],
     category: "Liqueurs",
   }).save();
   //Wines
   const lillet_blanc = await new Ingredient({
     _id: "5eecfb641e34422b4039dba9",
     name: "Lillet Blanc",
-    image: `${config.get("base_url")}/images/ingredients/lillet_blanc.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/lillet_blanc_full.jpg",
+        thumbnailUrl: "/images/ingredients/lillet_blanc_thumb.jpg",
+      },
+    ],
     category: "Wines",
   }).save();
   const dry_vermouth = await new Ingredient({
     _id: "5eecfb641e34422b4039dbaa",
     name: "Dry Vermouth",
-    image: `${config.get("base_url")}/images/ingredients/dry_vermouth.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/dry_vermouth_full.jpg",
+        thumbnailUrl: "/images/ingredients/dry_vermouth_thumb.jpg",
+      },
+    ],
     category: "Wines",
   }).save();
   const red_vermouth = await new Ingredient({
     _id: "5eecfb641e34422b4039dbab",
     name: "Red Vermouth",
-    image: `${config.get("base_url")}/images/ingredients/red_vermouth.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/red_vermouth_full.jpg",
+        thumbnailUrl: "/images/ingredients/red_vermouth_thumb.jpg",
+      },
+    ],
     category: "Wines",
   }).save();
   const champagne = await new Ingredient({
     _id: "5eecfb641e34422b4039dbac",
     name: "Champagne",
-    image: `${config.get("base_url")}/images/ingredients/champagne.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/champagne_full.jpg",
+        thumbnailUrl: "/images/ingredients/champagne_thumb.jpg",
+      },
+    ],
     category: "Wines",
   }).save();
   const prosecco = await new Ingredient({
     _id: "5ef7558895ed7456400cd125",
     name: "Prosecco",
-    image: `${config.get("base_url")}/images/ingredients/prosecco.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/prosecco_full.jpg",
+        thumbnailUrl: "/images/ingredients/prosecco_thumb.jpg",
+      },
+    ],
     category: "Wines",
   }).save();
   const red_wine = await new Ingredient({
     _id: "5eecfb641e34422b4039dbad",
     name: "Red Wine",
-    image: `${config.get("base_url")}/images/ingredients/red_wine.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/red_wine_full.jpg",
+        thumbnailUrl: "/images/ingredients/red_wine_thumb.jpg",
+      },
+    ],
     category: "Wines",
   }).save();
   const white_wine = await new Ingredient({
     _id: "5ef6816942f15a0fe0f4953a",
     name: "White Wine",
-    image: `${config.get("base_url")}/images/ingredients/white_wine.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/white_wine_full.jpg",
+        thumbnailUrl: "/images/ingredients/white_wine_thumb.jpg",
+      },
+    ],
     category: "Wines",
   }).save();
   //Beers
   const beer = await new Ingredient({
     _id: "5eecfb641e34422b4039dbae",
     name: "Beer",
-    image: `${config.get("base_url")}/images/ingredients/beer.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/beer_full.jpg",
+        thumbnailUrl: "/images/ingredients/beer_thumb.jpg",
+      },
+    ],
     category: "Beers",
   }).save();
 
@@ -171,93 +291,168 @@ async function run() {
   const cola = await new Ingredient({
     _id: "5eecfb641e34422b4039dbaf",
     name: "Cola",
-    image: `${config.get("base_url")}/images/ingredients/cola.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/cola_full.jpg",
+        thumbnailUrl: "/images/ingredients/cola_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const soda_water = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb0",
     name: "Soda Water",
-    image: `${config.get("base_url")}/images/ingredients/soda_water.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/soda_water_full.jpg",
+        thumbnailUrl: "/images/ingredients/soda_water_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const tonic_water = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb1",
     name: "Tonic Water",
-    image: `${config.get("base_url")}/images/ingredients/tonic_water.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/tonic_water_full.jpg",
+        thumbnailUrl: "/images/ingredients/tonic_water_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const grapefruit_soda = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb2",
     name: "Grapefruit Soda",
-    image: `${config.get("base_url")}/images/ingredients/grapefruit_soda.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/grapefruit_soda_full.jpg",
+        thumbnailUrl: "/images/ingredients/grapefruit_soda_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   //Juices
   const orange_juice = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb3",
     name: "Orange Juice",
-    image: `${config.get("base_url")}/images/ingredients/orange_juice.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/orange_juice_full.jpg",
+        thumbnailUrl: "/images/ingredients/orange_juice_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const lime_juice = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb4",
     name: "Lime Juice",
-    image: `${config.get("base_url")}/images/ingredients/lime_juice.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/lime_juice_full.jpg",
+        thumbnailUrl: "/images/ingredients/lime_juice_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const lemon_juice = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb5",
     name: "Lemon Juice",
-    image: `${config.get("base_url")}/images/ingredients/lemon_juice.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/lemon_juice_full.jpg",
+        thumbnailUrl: "/images/ingredients/lemon_juice_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const cranberry_juice = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb6",
     name: "Cranberry Juice",
-    image: `${config.get("base_url")}/images/ingredients/cranberry_juice.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/cranberry_juice_full.jpg",
+        thumbnailUrl: "/images/ingredients/cranberry_juice_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const pineapple_juice = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb7",
     name: "Pineapple Juice",
-    image: `${config.get("base_url")}/images/ingredients/pineapple_juice.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/pineapple_juice_full.jpg",
+        thumbnailUrl: "/images/ingredients/pineapple_juice_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const tomato_juice = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb8",
     name: "Tomato Juice",
-    image: `${config.get("base_url")}/images/ingredients/tomato_juice.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/tomato_juice_full.jpg",
+        thumbnailUrl: "/images/ingredients/tomato_juice_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const clamato_juice = await new Ingredient({
     _id: "5eecfb641e34422b4039dbb9",
     name: "Clamato Juice",
-    image: `${config.get("base_url")}/images/ingredients/clamato_juice.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/clamato_juice_full.jpg",
+        thumbnailUrl: "/images/ingredients/clamato_juice_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   const angostura_bitter = await new Ingredient({
     _id: "5eecfb641e34422b4039dbba",
     name: "Angostura Bitter",
-    image: `${config.get("base_url")}/images/ingredients/angostura_bitter.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/angostura_bitter_full.jpg",
+        thumbnailUrl: "/images/ingredients/angostura_bitter_thumb.jpg",
+      },
+    ],
     category: "Mixers",
   }).save();
   //Syrups
   const grenadine = await new Ingredient({
     _id: "5eecfb641e34422b4039dbbb",
     name: "Grenadine",
-    image: `${config.get("base_url")}/images/ingredients/grenadine.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/grenadine_full.jpg",
+        thumbnailUrl: "/images/ingredients/grenadine_thumb.jpg",
+      },
+    ],
     category: "Syrups",
   }).save();
   const sugar_syrup = await new Ingredient({
     _id: "5eecfb641e34422b4039dbbc",
     name: "Sugar Syrup",
-    image: `${config.get("base_url")}/images/ingredients/sugar_syrup.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/sugar_syrup_full.jpg",
+        thumbnailUrl: "/images/ingredients/sugar_syrup_thumb.jpg",
+      },
+    ],
     category: "Syrups",
   }).save();
   const orgeat_syrup = await new Ingredient({
     _id: "5eecfb641e34422b4039dbbd",
     name: "Orgeat Syrup",
-    image: `${config.get("base_url")}/images/ingredients/orgeat_syrup.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/orgeat_syrup_full.jpg",
+        thumbnailUrl: "/images/ingredients/orgeat_syrup_thumb.jpg",
+      },
+    ],
     category: "Syrups",
   }).save();
 
@@ -266,99 +461,179 @@ async function run() {
   const lemon = await new Ingredient({
     _id: "5eecfb641e34422b4039dbbe",
     name: "Lemon",
-    image: `${config.get("base_url")}/images/ingredients/lemon.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/lemon_full.jpg",
+        thumbnailUrl: "/images/ingredients/lemon_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const lime = await new Ingredient({
     _id: "5eecfb641e34422b4039dbbf",
     name: "Lime",
-    image: `${config.get("base_url")}/images/ingredients/lime.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/lime_full.jpg",
+        thumbnailUrl: "/images/ingredients/lime_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const fruit_mix = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc0",
     name: "Fruit Mix",
-    image: `${config.get("base_url")}/images/ingredients/fruit_mix.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/fruit_mix_full.jpg",
+        thumbnailUrl: "/images/ingredients/fruit_mix_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const mint = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc1",
     name: "Mint",
-    image: `${config.get("base_url")}/images/ingredients/mint.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/mint_full.jpg",
+        thumbnailUrl: "/images/ingredients/mint_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const olives = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc2",
     name: "Olives",
-    image: `${config.get("base_url")}/images/ingredients/olives.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/olives_full.jpg",
+        thumbnailUrl: "/images/ingredients/olives_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const celery = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc3",
     name: "Celery",
-    image: `${config.get("base_url")}/images/ingredients/celery.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/celery_full.jpg",
+        thumbnailUrl: "/images/ingredients/celery_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const egg_white = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc4",
     name: "Egg White",
-    image: `${config.get("base_url")}/images/ingredients/egg_white.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/egg_white_full.jpg",
+        thumbnailUrl: "/images/ingredients/egg_white_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const coconut_cream = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc5",
     name: "Coconut Cream",
-    image: `${config.get("base_url")}/images/ingredients/coconut_cream.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/coconut_cream_full.jpg",
+        thumbnailUrl: "/images/ingredients/coconut_cream_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const fresh_cream = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc6",
     name: "Cream",
-    image: `${config.get("base_url")}/images/ingredients/fresh_cream.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/fresh_cream_full.jpg",
+        thumbnailUrl: "/images/ingredients/fresh_cream_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const coffee = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc7",
     name: "Coffee",
-    image: `${config.get("base_url")}/images/ingredients/coffee.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/coffee_full.jpg",
+        thumbnailUrl: "/images/ingredients/coffee_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   //Sauces
   const worcestershire = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc8",
     name: "Worcestershire Sauce",
-    image: `${config.get("base_url")}/images/ingredients/worcestershire.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/worcestershire_full.jpg",
+        thumbnailUrl: "/images/ingredients/worcestershire_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const hot_sauce = await new Ingredient({
     _id: "5eecfb641e34422b4039dbc9",
     name: "Hot Sauce",
-    image: `${config.get("base_url")}/images/ingredients/hot_sauce.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/hot_sauce_full.jpg",
+        thumbnailUrl: "/images/ingredients/hot_sauce_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   //Powders
   const sugar = await new Ingredient({
     _id: "5eecfb641e34422b4039dbca",
     name: "Sugar",
-    image: `${config.get("base_url")}/images/ingredients/sugar.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/sugar_full.jpg",
+        thumbnailUrl: "/images/ingredients/sugar_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const salt = await new Ingredient({
     _id: "5eecfb641e34422b4039dbcb",
     name: "Salt",
-    image: `${config.get("base_url")}/images/ingredients/salt.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/salt_full.jpg",
+        thumbnailUrl: "/images/ingredients/salt_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const pepper = await new Ingredient({
     _id: "5eecfb641e34422b4039dbcc",
     name: "Pepper",
-    image: `${config.get("base_url")}/images/ingredients/pepper.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/pepper_full.jpg",
+        thumbnailUrl: "/images/ingredients/pepper_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
   const chilly_powder = await new Ingredient({
     _id: "5eecfb641e34422b4039dbcd",
     name: "Chilly Powder",
-    image: `${config.get("base_url")}/images/ingredients/chilly_powder.jpg`,
+    images: [
+      {
+        url: "/images/ingredients/chilly_powder_full.jpg",
+        thumbnailUrl: "/images/ingredients/chilly_powder_thumb.jpg",
+      },
+    ],
     category: "Others",
   }).save();
 
@@ -366,7 +641,12 @@ async function run() {
   await new Cocktail({
     _id: "5ef7558895ed7456400cd148",
     name: "Aperol Spritz",
-    image: `${config.get("base_url")}/images/cocktails/aperol_spritz.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/aperol_spritz_full.jpg",
+        thumbnailUrl: "/images/cocktails/aperol_spritz_thumb.jpg",
+      },
+    ],
     preparation: [
       "Build all ingredients into a wine glass filled with ice.",
       "Stir gently.",
@@ -380,7 +660,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbce",
     name: "Michelada",
-    image: `${config.get("base_url")}/images/cocktails/michelada.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/michelada_full.jpg",
+        thumbnailUrl: "/images/cocktails/michelada_thumb.jpg",
+      },
+    ],
     preparation: [
       "Run a lime wedge around the rim of a glass and dip in coarse sea salt and chili powder.",
       "Fill beer glass with ice cubes.",
@@ -401,7 +686,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbd7",
     name: "Margarita",
-    image: `${config.get("base_url")}/images/cocktails/margarita.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/margarita_full.jpg",
+        thumbnailUrl: "/images/cocktails/margarita_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour all ingredients into shaker with ice.",
       "Shake well and strain into cocktail glass rimmed with salt.",
@@ -416,7 +706,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbdc",
     name: "Cuba Libre",
-    image: `${config.get("base_url")}/images/cocktails/cuba_libre.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/cuba_libre_full.jpg",
+        thumbnailUrl: "/images/cocktails/cuba_libre_thumb.jpg",
+      },
+    ],
     preparation: [
       "Build all ingredients in a highball glass filled with ice.",
       "Garnish with lime wedge.",
@@ -430,7 +725,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbe0",
     name: "Pisco Sour",
-    image: `${config.get("base_url")}/images/cocktails/pisco_sour.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/pisco_sour_full.jpg",
+        thumbnailUrl: "/images/cocktails/pisco_sour_thumb.jpg",
+      },
+    ],
     preparation: [
       "Vigorously shake contents in a cocktail shaker with ice cubes.",
       "Strain into a glass and garnish with bitters.",
@@ -445,7 +745,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbe5",
     name: "Piscola",
-    image: `${config.get("base_url")}/images/cocktails/piscola.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/piscola_full.jpg",
+        thumbnailUrl: "/images/cocktails/piscola_thumb.jpg",
+      },
+    ],
     preparation: [
       "Build all ingredients in a highball glass filled with ice.",
       "Garnish with lime wedge.",
@@ -458,7 +763,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbe8",
     name: "Tequila Sunrise",
-    image: `${config.get("base_url")}/images/cocktails/tequila_sunrise.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/tequila_sunrise_full.jpg",
+        thumbnailUrl: "/images/cocktails/tequila_sunrise_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour the tequila and orange juice into glass over ice.",
       "Add the grenadine, which will sink to the bottom.",
@@ -474,7 +784,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbec",
     name: "Mojito",
-    image: `${config.get("base_url")}/images/cocktails/mojito.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/mojito_full.jpg",
+        thumbnailUrl: "/images/cocktails/mojito_thumb.jpg",
+      },
+    ],
     preparation: [
       "Muddle mint leaves with sugar and lime juice.",
       "Add a splash of soda water and fill the glass with cracked ice.",
@@ -493,7 +808,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbf2",
     name: "Gin & Tonic",
-    image: `${config.get("base_url")}/images/cocktails/gin_and_tonic.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/gin_and_tonic_full.jpg",
+        thumbnailUrl: "/images/cocktails/gin_and_tonic_thumb.jpg",
+      },
+    ],
     preparation: ["In a glass filled with ice cubes, add gin and tonic."],
     components: [
       { ingredient: gin, measure: "50 ml" },
@@ -503,7 +823,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbf5",
     name: "Martini",
-    image: `${config.get("base_url")}/images/cocktails/martini.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/martini_full.jpg",
+        thumbnailUrl: "/images/cocktails/martini_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour all ingredients into mixing glass with ice cubes. Shake well.",
       "Strain into chilled martini cocktail glass.",
@@ -518,7 +843,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbf9",
     name: "Vodka Martini",
-    image: `${config.get("base_url")}/images/cocktails/vodka_martini.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/vodka_martini_full.jpg",
+        thumbnailUrl: "/images/cocktails/vodka_martini_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour all ingredients into mixing glass with ice cubes. Shake well.",
       "Strain in chilled martini cocktail glass.",
@@ -533,7 +863,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dbfd",
     name: "Caipirinha",
-    image: `${config.get("base_url")}/images/cocktails/caipirinha.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/caipirinha_full.jpg",
+        thumbnailUrl: "/images/cocktails/caipirinha_thumb.jpg",
+      },
+    ],
     preparation: [
       "Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon).",
       "Fill the glass with ice and add the Cachaça.",
@@ -547,7 +882,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc01",
     name: "Caipiroska",
-    image: `${config.get("base_url")}/images/cocktails/caipiroska.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/caipiroska_full.jpg",
+        thumbnailUrl: "/images/cocktails/caipiroska_thumb.jpg",
+      },
+    ],
     preparation: [
       "Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon).",
       "Fill the glass with ice and add the Vodka.",
@@ -561,7 +901,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc05",
     name: "Side Car",
-    image: `${config.get("base_url")}/images/cocktails/side_car.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/side_car_full.jpg",
+        thumbnailUrl: "/images/cocktails/side_car_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour all ingredients into cocktail shaker filled with ice.",
       "Shake well and strain into cocktail glass.",
@@ -575,7 +920,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc09",
     name: "Long Island Iced Tea",
-    image: `${config.get("base_url")}/images/cocktails/long_island.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/long_island_full.jpg",
+        thumbnailUrl: "/images/cocktails/long_island_thumb.jpg",
+      },
+    ],
     preparation: [
       "Add all ingredients into highball glass filled with ice. Stir gently.",
       "Optionally garnish with lemon slice.",
@@ -594,7 +944,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc12",
     name: "Cosmopolitan",
-    image: `${config.get("base_url")}/images/cocktails/cosmopolitan.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/cosmopolitan_full.jpg",
+        thumbnailUrl: "/images/cocktails/cosmopolitan_thumb.jpg",
+      },
+    ],
     preparation: [
       "Shake all ingredients in cocktail shaker filled with ice.",
       "Strain into a large cocktail glass.",
@@ -610,7 +965,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc17",
     name: "Daiquiri",
-    image: `${config.get("base_url")}/images/cocktails/daiquiri.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/daiquiri_full.jpg",
+        thumbnailUrl: "/images/cocktails/daiquiri_thumb.jpg",
+      },
+    ],
     preparation: [
       "In a cocktail shaker add all ingredients.",
       "Stir well to dissolve the sugar.",
@@ -626,7 +986,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc1b",
     name: "Mai Tai",
-    image: `${config.get("base_url")}/images/cocktails/mai_tai.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/mai_tai_full.jpg",
+        thumbnailUrl: "/images/cocktails/mai_tai_thumb.jpg",
+      },
+    ],
     preparation: [
       "Shake all ingredients with ice.",
       "Strain into glass.",
@@ -643,7 +1008,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc21",
     name: "Piña Colada",
-    image: `${config.get("base_url")}/images/cocktails/pina_colada.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/pina_colada_full.jpg",
+        thumbnailUrl: "/images/cocktails/pina_colada_thumb.jpg",
+      },
+    ],
     preparation: [
       "Blend all the ingredients with ice in an electric blender.",
       "Pour into a large goblet or Hurricane glass and serve.",
@@ -657,7 +1027,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc25",
     name: "Paloma",
-    image: `${config.get("base_url")}/images/cocktails/paloma.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/paloma_full.jpg",
+        thumbnailUrl: "/images/cocktails/paloma_thumb.jpg",
+      },
+    ],
     preparation: ["Stir together and serve over ice."],
     components: [
       { ingredient: tequila, measure: "50 ml" },
@@ -668,7 +1043,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc28",
     name: "Black Russian",
-    image: `${config.get("base_url")}/images/cocktails/black_russian.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/black_russian_full.jpg",
+        thumbnailUrl: "/images/cocktails/black_russian_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour the ingredients into an old fashioned glass filled with ice cubes.",
       "Stir gently.",
@@ -681,7 +1061,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc2b",
     name: "Bloody Mary",
-    image: `${config.get("base_url")}/images/cocktails/bloody_mary.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/bloody_mary_full.jpg",
+        thumbnailUrl: "/images/cocktails/bloody_mary_thumb.jpg",
+      },
+    ],
     preparation: [
       "Stirring gently, pour all ingredients into highball glass.",
       "Garnish.",
@@ -699,7 +1084,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc33",
     name: "Irish Coffee",
-    image: `${config.get("base_url")}/images/cocktails/irish_coffee.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/irish_coffee_full.jpg",
+        thumbnailUrl: "/images/cocktails/irish_coffee_thumb.jpg",
+      },
+    ],
     preparation: [
       "Heat the coffee, whiskey and sugar. Do not boil.",
       "Pour into glass and top with cream.",
@@ -715,7 +1105,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc38",
     name: "Manhattan",
-    image: `${config.get("base_url")}/images/cocktails/manhattan.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/manhattan_full.jpg",
+        thumbnailUrl: "/images/cocktails/manhattan_thumb.jpg",
+      },
+    ],
     preparation: [
       "Stirred over ice, strained into a chilled glass, garnished, and served up.",
     ],
@@ -728,7 +1123,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc3c",
     name: "Old Fashioned",
-    image: `${config.get("base_url")}/images/cocktails/old_fashioned.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/old_fashioned_full.jpg",
+        thumbnailUrl: "/images/cocktails/old_fashioned_thumb.jpg",
+      },
+    ],
     preparation: [
       "Place sugar cube in old fashioned glass and saturate with bitters.",
       "Add a dash of plain water. Muddle until dissolved.",
@@ -744,7 +1144,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc40",
     name: "Rusty Nail",
-    image: `${config.get("base_url")}/images/cocktails/rusty_nail.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/rusty_nail_full.jpg",
+        thumbnailUrl: "/images/cocktails/rusty_nail_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour all ingredients directly into old-fashioned glass filled with ice.",
       "Stir gently.",
@@ -758,7 +1163,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc43",
     name: "Whiskey Sour",
-    image: `${config.get("base_url")}/images/cocktails/whiskey_sour.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/whiskey_sour_full.jpg",
+        thumbnailUrl: "/images/cocktails/whiskey_sour_thumb.jpg",
+      },
+    ],
     preparation: [
       "Shake with ice.",
       "Strain into chilled glass, garnish and serve.",
@@ -772,7 +1182,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc47",
     name: "Vesper",
-    image: `${config.get("base_url")}/images/cocktails/vesper.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/vesper_full.jpg",
+        thumbnailUrl: "/images/cocktails/vesper_thumb.jpg",
+      },
+    ],
     preparation: [
       "Shake and strain into a chilled cocktail glass.",
       "Garnish and serve.",
@@ -786,7 +1201,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc4b",
     name: "Negroni",
-    image: `${config.get("base_url")}/images/cocktails/negroni.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/negroni_full.jpg",
+        thumbnailUrl: "/images/cocktails/negroni_thumb.jpg",
+      },
+    ],
     preparation: ["Stir into glass over ice, garnish and serve."],
     components: [
       { ingredient: gin, measure: "30 ml" },
@@ -797,7 +1217,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc4f",
     name: "John Collins",
-    image: `${config.get("base_url")}/images/cocktails/john_collins.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/john_collins_full.jpg",
+        thumbnailUrl: "/images/cocktails/john_collins_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour all ingredients directly into highball glass filled with ice.",
       "Stir gently.",
@@ -814,7 +1239,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc54",
     name: "Mimosa",
-    image: `${config.get("base_url")}/images/cocktails/mimosa.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/mimosa_full.jpg",
+        thumbnailUrl: "/images/cocktails/mimosa_thumb.jpg",
+      },
+    ],
     preparation: [
       "Ensure both ingredients are well chilled, then mix into the glass. Serve cold.",
     ],
@@ -826,7 +1256,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc57",
     name: "Americano",
-    image: `${config.get("base_url")}/images/cocktails/americano.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/americano_full.jpg",
+        thumbnailUrl: "/images/cocktails/americano_thumb.jpg",
+      },
+    ],
     preparation: [
       "Pour the Campari and Vermouth over ice into a highball glass.",
       "Add a splash of soda water and garnish with half orange slice and a lemon twist.",
@@ -840,7 +1275,12 @@ async function run() {
   await new Cocktail({
     _id: "5eecfb641e34422b4039dc5b",
     name: "Sangria",
-    image: `${config.get("base_url")}/images/cocktails/sangria.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/sangria_full.jpg",
+        thumbnailUrl: "/images/cocktails/sangria_thumb.jpg",
+      },
+    ],
     preparation: [
       "Cut the fruit in small pieces.",
       "Stir with the rest of the ingredients.",
@@ -857,7 +1297,12 @@ async function run() {
   await new Cocktail({
     _id: "5ef68228cb806827f42ed14a",
     name: "Screwdriver",
-    image: `${config.get("base_url")}/images/cocktails/screwdriver.jpg`,
+    images: [
+      {
+        url: "/images/cocktails/screwdriver_full.jpg",
+        thumbnailUrl: "/images/cocktails/screwdriver_thumb.jpg",
+      },
+    ],
     preparation: ["Mix in a highball glass with ice.", "Garnish and serve."],
     components: [
       { ingredient: vodka, measure: "50 ml" },

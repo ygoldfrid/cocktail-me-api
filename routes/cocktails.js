@@ -6,19 +6,26 @@ const validateObjectId = require("../middleware/validateObjectId");
 router.get("/", async (req, res) => {
   const cocktails = await Cocktail.find()
     .sort("name")
-    .select("-__v")
-    .populate("components.ingredient", "_id name alternatives");
+    .select("-__v -images._id")
+    .populate({
+      path: "components.ingredient",
+      select: "_id name images.url images.thumbnailUrl measure alternatives",
+      populate: {
+        select: "_id name images.url images.thumbnailUrl",
+        path: "alternatives",
+      },
+    });
   res.send(cocktails);
 });
 
 router.get("/:id", validateObjectId, async (req, res) => {
   const cocktail = await Cocktail.findById(req.params.id)
-    .select("-__v")
+    .select("-__v -images._id")
     .populate({
       path: "components.ingredient",
-      select: "_id name image measure alternatives",
+      select: "_id name images.url images.thumbnailUrl measure alternatives",
       populate: {
-        select: "_id name image",
+        select: "_id name images.url images.thumbnailUrl",
         path: "alternatives",
       },
     });

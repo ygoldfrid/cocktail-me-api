@@ -8,10 +8,15 @@ const validateObjectId = require("../middleware/validateObjectId");
 const validateBody = require("../middleware/validateBody");
 
 router.get("/", auth, async (req, res) => {
-  const user = await User.findById(req.user._id).populate(
-    "bar",
-    "_id name image alternatives"
-  );
+  const user = await User.findById(req.user._id).populate({
+    path: "bar",
+    select: "_id name images.url images.thumbnailUrl measure alternatives",
+    populate: {
+      select: "_id name images.url images.thumbnailUrl",
+      path: "alternatives",
+    },
+  });
+
   res.send(user.bar);
 });
 
@@ -29,7 +34,14 @@ router.post("/", [auth, validateBody(validateIngredient)], async (req, res) => {
   user.bar.push(ingredient);
   await user.save();
 
-  user = await User.findById(req.user._id).populate("bar", "_id name image");
+  user = await User.findById(req.user._id).populate({
+    path: "bar",
+    select: "_id name images.url images.thumbnailUrl measure alternatives",
+    populate: {
+      select: "_id name images.url images.thumbnailUrl",
+      path: "alternatives",
+    },
+  });
 
   res.send(user.bar);
 });
@@ -43,7 +55,14 @@ router.delete("/:id", [auth, validateObjectId], async (req, res) => {
   user.bar.splice(index, 1);
   await user.save();
 
-  user = await User.findById(req.user._id).populate("bar", "_id name image");
+  user = await User.findById(req.user._id).populate({
+    path: "bar",
+    select: "_id name images.url images.thumbnailUrl measure alternatives",
+    populate: {
+      select: "_id name images.url images.thumbnailUrl",
+      path: "alternatives",
+    },
+  });
 
   res.send(user.bar);
 });
