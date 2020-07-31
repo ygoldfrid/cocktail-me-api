@@ -30,6 +30,12 @@ const userSchema = new mongoose.Schema({
       ref: "Ingredient",
     },
   ],
+  favorites: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Cocktail",
+    },
+  ],
   isAdmin: Boolean,
 });
 
