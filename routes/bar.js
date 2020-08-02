@@ -17,7 +17,8 @@ router.get("/", auth, async (req, res) => {
     },
   });
 
-  res.send(user.bar);
+  if (user) res.send(user.bar);
+  else res.send("Invalid user").status(400);
 });
 
 router.post("/", [auth, validateBody(validateIngredient)], async (req, res) => {
@@ -31,7 +32,7 @@ router.post("/", [auth, validateBody(validateIngredient)], async (req, res) => {
   )
     return res.status(400).send("Ingredient already in bar");
 
-  user.bar.push(ingredient);
+  user.bar.unshift(ingredient);
   await user.save();
 
   user = await User.findById(req.user._id).populate({

@@ -36,6 +36,8 @@ const userSchema = new mongoose.Schema({
       ref: "Cocktail",
     },
   ],
+  passwordResetToken: String,
+  passwordResetExpiration: Date,
   isAdmin: Boolean,
 });
 

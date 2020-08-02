@@ -6,6 +6,7 @@ const auth = require("../routes/auth");
 const bar = require("../routes/bar");
 const cocktails = require("../routes/cocktails");
 const favorites = require("../routes/favorites");
+const forgotPassword = require("../routes/forgotPassword");
 const ingredients = require("../routes/ingredients");
 const users = require("../routes/users");
 
@@ -15,6 +16,7 @@ module.exports = function (app) {
   app.use("/api/bar", bar);
   app.use("/api/cocktails", cocktails);
   app.use("/api/favorites", favorites);
+  app.use("/api/forgotPassword", forgotPassword);
   app.use("/api/ingredients", ingredients);
   app.use("/api/users", users);
   app.use(error);
