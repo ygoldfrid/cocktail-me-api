@@ -4,7 +4,7 @@ API for Cocktail Me, an app for making your own homemade cocktails.
 
 ## Getting Started
 
-Try the Web App [here](https://yaniv-cocktailme.herokuapp.com/)
+Try the Web App [here](https://cocktailme.yanivgoldfrid.com)
 
 ## Built With
 
