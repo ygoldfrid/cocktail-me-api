@@ -1,11 +1,10 @@
 const { Cocktail } = require("./models/cocktail");
 const { Ingredient } = require("./models/ingredient");
 const mongoose = require("mongoose");
-const config = require("config");
 
 async function run() {
   //Connecting
-  await mongoose.connect(config.get("db"), {
+  await mongoose.connect(process.env.DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

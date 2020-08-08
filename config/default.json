@@ -1,8 +1,0 @@
-{
-  "jwtPrivateKey": "cocktailme_jwtPrivateKey",
-  "db": "mongodb://localhost/cocktailme",
-  "base_url": "http://localhost:3900",
-  "port": "3900",
-  "reset_email": "cocktailme_resetEmail",
-  "reset_password": "cocktailme_resetPassword"
-}

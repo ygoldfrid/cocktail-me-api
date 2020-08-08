@@ -1,6 +1,5 @@
 const request = require("supertest");
 const jwt = require("jsonwebtoken");
-const config = require("config");
 const { User } = require("../../models/user");
 
 let server;
@@ -31,7 +30,7 @@ describe("auth", () => {
         name: user.name,
         email: user.email,
       },
-      config.get("jwtPrivateKey")
+      process.env.JWT_PRIVATE_KEY
     );
   });
 
@@ -97,7 +96,7 @@ describe("auth", () => {
 
       it("should return valid JWT if input is valid", async () => {
         const res = await exec();
-        const decoded = jwt.verify(res.text, config.get("jwtPrivateKey"));
+        const decoded = jwt.verify(res.text, process.env.JWT_PRIVATE_KEY);
         expect(decoded).toHaveProperty("_id", user._id);
         expect(decoded).toHaveProperty("name", user.name);
         expect(decoded).toHaveProperty("email", user.email);

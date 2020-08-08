@@ -1,6 +1,0 @@
-{
-  "jwtPrivateKey": "cocktailme_jwtPrivateKey",
-  "db": "cocktailme_db",
-  "reset_email": "cocktailme_resetEmail",
-  "reset_password": "cocktailme_resetPassword"
-}

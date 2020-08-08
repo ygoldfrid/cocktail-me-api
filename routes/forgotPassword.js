@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
-const config = require("config");
 const crypto = require("crypto");
 const Joi = require("joi");
 const nodemailer = require("nodemailer");
@@ -61,8 +60,8 @@ function sendEmail(user, token) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: config.get("reset_email"),
-      pass: config.get("reset_password"),
+      user: process.env.RESET_EMAIL,
+      pass: process.env.RESET_PASSWORD,
     },
   });
 
