@@ -1,12 +1,14 @@
 const { Cocktail } = require("./models/cocktail");
 const { Ingredient } = require("./models/ingredient");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 async function run() {
   //Connecting
   await mongoose.connect(process.env.DB, {
-    useNewUrlParser: true,
     useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useCreateIndex: true,
   });
 
   await Cocktail.deleteMany({});
@@ -674,7 +676,6 @@ async function run() {
     components: [
       { ingredient: beer, measure: "350 ml" },
       { ingredient: clamato_juice, measure: "150 ml" },
-      { ingredient: lime_juice, measure: "50 ml" },
       { ingredient: lime, measure: "cut in 4" },
       { ingredient: hot_sauce, measure: "4 drops" },
       { ingredient: chilly_powder, measure: "1 ts" },
