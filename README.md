@@ -1,10 +1,11 @@
-# Cocktail Me API!
+# Cocktail Me API
 
 API for Cocktail Me, an app for making your own homemade cocktails.
 
 ## Getting Started
 
-Try the Web App [here](https://cocktailme.yanivgoldfrid.com)
+- Try the Web App [here](https://cocktailme.yanivgoldfrid.com)
+- Try the Mobile App [here](https://play.google.com/store/apps/details?id=com.yanivgoldfrid.cocktailme)
 
 ## Built With
 
