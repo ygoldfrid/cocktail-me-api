@@ -22,8 +22,8 @@ async function run() {
     name: "Cachaça",
     images: [
       {
-        url: "/images/ingredients/cachaca_full.jpg",
-        thumbnailUrl: "/images/ingredients/cachaca_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/cachaca.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/cachaca.jpg",
       },
     ],
     category: "Spirits",
@@ -33,8 +33,8 @@ async function run() {
     name: "Cognac",
     images: [
       {
-        url: "/images/ingredients/cognac_full.jpg",
-        thumbnailUrl: "/images/ingredients/cognac_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/cognac.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/cognac.jpg",
       },
     ],
     category: "Spirits",
@@ -44,8 +44,8 @@ async function run() {
     name: "Brandy",
     images: [
       {
-        url: "/images/ingredients/brandy_full.jpg",
-        thumbnailUrl: "/images/ingredients/brandy_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/brandy.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/brandy.jpg",
       },
     ],
     category: "Spirits",
@@ -55,8 +55,8 @@ async function run() {
     name: "Bourbon",
     images: [
       {
-        url: "/images/ingredients/bourbon_full.jpg",
-        thumbnailUrl: "/images/ingredients/bourbon_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/bourbon.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/bourbon.jpg",
       },
     ],
     category: "Spirits",
@@ -66,8 +66,8 @@ async function run() {
     name: "Gin",
     images: [
       {
-        url: "/images/ingredients/gin_full.jpg",
-        thumbnailUrl: "/images/ingredients/gin_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/gin.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/gin.jpg",
       },
     ],
     category: "Spirits",
@@ -77,8 +77,8 @@ async function run() {
     name: "Pisco",
     images: [
       {
-        url: "/images/ingredients/pisco_full.jpg",
-        thumbnailUrl: "/images/ingredients/pisco_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/pisco.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/pisco.jpg",
       },
     ],
     category: "Spirits",
@@ -88,8 +88,8 @@ async function run() {
     name: "Rum",
     images: [
       {
-        url: "/images/ingredients/rum_full.jpg",
-        thumbnailUrl: "/images/ingredients/rum_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/rum.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/rum.jpg",
       },
     ],
     category: "Spirits",
@@ -99,8 +99,8 @@ async function run() {
     name: "Tequila",
     images: [
       {
-        url: "/images/ingredients/tequila_full.jpg",
-        thumbnailUrl: "/images/ingredients/tequila_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/tequila.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/tequila.jpg",
       },
     ],
     category: "Spirits",
@@ -110,8 +110,8 @@ async function run() {
     name: "Vodka",
     images: [
       {
-        url: "/images/ingredients/vodka_full.jpg",
-        thumbnailUrl: "/images/ingredients/vodka_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/vodka.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/vodka.jpg",
       },
     ],
     category: "Spirits",
@@ -121,8 +121,8 @@ async function run() {
     name: "White Rum",
     images: [
       {
-        url: "/images/ingredients/white_rum_full.jpg",
-        thumbnailUrl: "/images/ingredients/white_rum_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/white_rum.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/white_rum.jpg",
       },
     ],
     category: "Spirits",
@@ -132,8 +132,8 @@ async function run() {
     name: "Whiskey",
     images: [
       {
-        url: "/images/ingredients/whiskey_full.jpg",
-        thumbnailUrl: "/images/ingredients/whiskey_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/whiskey.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/whiskey.jpg",
       },
     ],
     category: "Spirits",
@@ -146,8 +146,8 @@ async function run() {
     name: "Cointreau",
     images: [
       {
-        url: "/images/ingredients/cointreau_full.jpg",
-        thumbnailUrl: "/images/ingredients/cointreau_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/cointreau.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/cointreau.jpg",
       },
     ],
     category: "Liqueurs",
@@ -157,8 +157,8 @@ async function run() {
     name: "Aperol",
     images: [
       {
-        url: "/images/ingredients/aperol_full.jpg",
-        thumbnailUrl: "/images/ingredients/aperol_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/aperol.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/aperol.jpg",
       },
     ],
     category: "Liqueurs",
@@ -168,8 +168,8 @@ async function run() {
     name: "Drambuie",
     images: [
       {
-        url: "/images/ingredients/drambuie_full.jpg",
-        thumbnailUrl: "/images/ingredients/drambuie_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/drambuie.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/drambuie.jpg",
       },
     ],
     category: "Liqueurs",
@@ -179,8 +179,8 @@ async function run() {
     name: "Coffee Liqueur",
     images: [
       {
-        url: "/images/ingredients/coffee_liqueur_full.jpg",
-        thumbnailUrl: "/images/ingredients/coffee_liqueur_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/coffee_liqueur.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/coffee_liqueur.jpg",
       },
     ],
     category: "Liqueurs",
@@ -190,8 +190,8 @@ async function run() {
     name: "Campari",
     images: [
       {
-        url: "/images/ingredients/campari_full.jpg",
-        thumbnailUrl: "/images/ingredients/campari_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/campari.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/campari.jpg",
       },
     ],
     category: "Liqueurs",
@@ -202,8 +202,8 @@ async function run() {
     name: "Lillet Blanc",
     images: [
       {
-        url: "/images/ingredients/lillet_blanc_full.jpg",
-        thumbnailUrl: "/images/ingredients/lillet_blanc_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/lillet_blanc.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/lillet_blanc.jpg",
       },
     ],
     category: "Wines",
@@ -213,8 +213,8 @@ async function run() {
     name: "Dry Vermouth",
     images: [
       {
-        url: "/images/ingredients/dry_vermouth_full.jpg",
-        thumbnailUrl: "/images/ingredients/dry_vermouth_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/dry_vermouth.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/dry_vermouth.jpg",
       },
     ],
     category: "Wines",
@@ -224,8 +224,8 @@ async function run() {
     name: "Red Vermouth",
     images: [
       {
-        url: "/images/ingredients/red_vermouth_full.jpg",
-        thumbnailUrl: "/images/ingredients/red_vermouth_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/red_vermouth.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/red_vermouth.jpg",
       },
     ],
     category: "Wines",
@@ -235,8 +235,8 @@ async function run() {
     name: "Champagne",
     images: [
       {
-        url: "/images/ingredients/champagne_full.jpg",
-        thumbnailUrl: "/images/ingredients/champagne_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/champagne.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/champagne.jpg",
       },
     ],
     category: "Wines",
@@ -246,8 +246,8 @@ async function run() {
     name: "Prosecco",
     images: [
       {
-        url: "/images/ingredients/prosecco_full.jpg",
-        thumbnailUrl: "/images/ingredients/prosecco_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/prosecco.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/prosecco.jpg",
       },
     ],
     category: "Wines",
@@ -257,8 +257,8 @@ async function run() {
     name: "Red Wine",
     images: [
       {
-        url: "/images/ingredients/red_wine_full.jpg",
-        thumbnailUrl: "/images/ingredients/red_wine_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/red_wine.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/red_wine.jpg",
       },
     ],
     category: "Wines",
@@ -268,8 +268,8 @@ async function run() {
     name: "White Wine",
     images: [
       {
-        url: "/images/ingredients/white_wine_full.jpg",
-        thumbnailUrl: "/images/ingredients/white_wine_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/white_wine.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/white_wine.jpg",
       },
     ],
     category: "Wines",
@@ -280,8 +280,8 @@ async function run() {
     name: "Beer",
     images: [
       {
-        url: "/images/ingredients/beer_full.jpg",
-        thumbnailUrl: "/images/ingredients/beer_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/beer.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/beer.jpg",
       },
     ],
     category: "Beers",
@@ -294,8 +294,8 @@ async function run() {
     name: "Cola",
     images: [
       {
-        url: "/images/ingredients/cola_full.jpg",
-        thumbnailUrl: "/images/ingredients/cola_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/cola.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/cola.jpg",
       },
     ],
     category: "Mixers",
@@ -305,8 +305,8 @@ async function run() {
     name: "Soda Water",
     images: [
       {
-        url: "/images/ingredients/soda_water_full.jpg",
-        thumbnailUrl: "/images/ingredients/soda_water_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/soda_water.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/soda_water.jpg",
       },
     ],
     category: "Mixers",
@@ -316,8 +316,8 @@ async function run() {
     name: "Tonic Water",
     images: [
       {
-        url: "/images/ingredients/tonic_water_full.jpg",
-        thumbnailUrl: "/images/ingredients/tonic_water_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/tonic_water.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/tonic_water.jpg",
       },
     ],
     category: "Mixers",
@@ -327,8 +327,8 @@ async function run() {
     name: "Grapefruit Soda",
     images: [
       {
-        url: "/images/ingredients/grapefruit_soda_full.jpg",
-        thumbnailUrl: "/images/ingredients/grapefruit_soda_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/grapefruit_soda.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/grapefruit_soda.jpg",
       },
     ],
     category: "Mixers",
@@ -339,8 +339,8 @@ async function run() {
     name: "Orange Juice",
     images: [
       {
-        url: "/images/ingredients/orange_juice_full.jpg",
-        thumbnailUrl: "/images/ingredients/orange_juice_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/orange_juice.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/orange_juice.jpg",
       },
     ],
     category: "Mixers",
@@ -350,8 +350,8 @@ async function run() {
     name: "Lime Juice",
     images: [
       {
-        url: "/images/ingredients/lime_juice_full.jpg",
-        thumbnailUrl: "/images/ingredients/lime_juice_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/lime_juice.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/lime_juice.jpg",
       },
     ],
     category: "Mixers",
@@ -361,8 +361,8 @@ async function run() {
     name: "Lemon Juice",
     images: [
       {
-        url: "/images/ingredients/lemon_juice_full.jpg",
-        thumbnailUrl: "/images/ingredients/lemon_juice_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/lemon_juice.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/lemon_juice.jpg",
       },
     ],
     category: "Mixers",
@@ -372,8 +372,8 @@ async function run() {
     name: "Cranberry Juice",
     images: [
       {
-        url: "/images/ingredients/cranberry_juice_full.jpg",
-        thumbnailUrl: "/images/ingredients/cranberry_juice_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/cranberry_juice.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/cranberry_juice.jpg",
       },
     ],
     category: "Mixers",
@@ -383,8 +383,8 @@ async function run() {
     name: "Pineapple Juice",
     images: [
       {
-        url: "/images/ingredients/pineapple_juice_full.jpg",
-        thumbnailUrl: "/images/ingredients/pineapple_juice_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/pineapple_juice.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/pineapple_juice.jpg",
       },
     ],
     category: "Mixers",
@@ -394,8 +394,8 @@ async function run() {
     name: "Tomato Juice",
     images: [
       {
-        url: "/images/ingredients/tomato_juice_full.jpg",
-        thumbnailUrl: "/images/ingredients/tomato_juice_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/tomato_juice.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/tomato_juice.jpg",
       },
     ],
     category: "Mixers",
@@ -405,8 +405,8 @@ async function run() {
     name: "Clamato Juice",
     images: [
       {
-        url: "/images/ingredients/clamato_juice_full.jpg",
-        thumbnailUrl: "/images/ingredients/clamato_juice_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/clamato_juice.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/clamato_juice.jpg",
       },
     ],
     category: "Mixers",
@@ -416,8 +416,8 @@ async function run() {
     name: "Angostura Bitter",
     images: [
       {
-        url: "/images/ingredients/angostura_bitter_full.jpg",
-        thumbnailUrl: "/images/ingredients/angostura_bitter_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/angostura_bitter.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/angostura_bitter.jpg",
       },
     ],
     category: "Mixers",
@@ -428,8 +428,8 @@ async function run() {
     name: "Grenadine",
     images: [
       {
-        url: "/images/ingredients/grenadine_full.jpg",
-        thumbnailUrl: "/images/ingredients/grenadine_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/grenadine.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/grenadine.jpg",
       },
     ],
     category: "Syrups",
@@ -439,8 +439,8 @@ async function run() {
     name: "Sugar Syrup",
     images: [
       {
-        url: "/images/ingredients/sugar_syrup_full.jpg",
-        thumbnailUrl: "/images/ingredients/sugar_syrup_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/sugar_syrup.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/sugar_syrup.jpg",
       },
     ],
     category: "Syrups",
@@ -450,8 +450,8 @@ async function run() {
     name: "Orgeat Syrup",
     images: [
       {
-        url: "/images/ingredients/orgeat_syrup_full.jpg",
-        thumbnailUrl: "/images/ingredients/orgeat_syrup_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/orgeat_syrup.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/orgeat_syrup.jpg",
       },
     ],
     category: "Syrups",
@@ -464,8 +464,8 @@ async function run() {
     name: "Lemon",
     images: [
       {
-        url: "/images/ingredients/lemon_full.jpg",
-        thumbnailUrl: "/images/ingredients/lemon_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/lemon.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/lemon.jpg",
       },
     ],
     category: "Others",
@@ -475,8 +475,8 @@ async function run() {
     name: "Lime",
     images: [
       {
-        url: "/images/ingredients/lime_full.jpg",
-        thumbnailUrl: "/images/ingredients/lime_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/lime.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/lime.jpg",
       },
     ],
     category: "Others",
@@ -486,8 +486,8 @@ async function run() {
     name: "Fruit Mix",
     images: [
       {
-        url: "/images/ingredients/fruit_mix_full.jpg",
-        thumbnailUrl: "/images/ingredients/fruit_mix_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/fruit_mix.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/fruit_mix.jpg",
       },
     ],
     category: "Others",
@@ -497,8 +497,8 @@ async function run() {
     name: "Mint",
     images: [
       {
-        url: "/images/ingredients/mint_full.jpg",
-        thumbnailUrl: "/images/ingredients/mint_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/mint.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/mint.jpg",
       },
     ],
     category: "Others",
@@ -508,8 +508,8 @@ async function run() {
     name: "Olives",
     images: [
       {
-        url: "/images/ingredients/olives_full.jpg",
-        thumbnailUrl: "/images/ingredients/olives_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/olives.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/olives.jpg",
       },
     ],
     category: "Others",
@@ -519,8 +519,8 @@ async function run() {
     name: "Celery",
     images: [
       {
-        url: "/images/ingredients/celery_full.jpg",
-        thumbnailUrl: "/images/ingredients/celery_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/celery.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/celery.jpg",
       },
     ],
     category: "Others",
@@ -530,8 +530,8 @@ async function run() {
     name: "Egg White",
     images: [
       {
-        url: "/images/ingredients/egg_white_full.jpg",
-        thumbnailUrl: "/images/ingredients/egg_white_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/egg_white.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/egg_white.jpg",
       },
     ],
     category: "Others",
@@ -541,8 +541,8 @@ async function run() {
     name: "Coconut Cream",
     images: [
       {
-        url: "/images/ingredients/coconut_cream_full.jpg",
-        thumbnailUrl: "/images/ingredients/coconut_cream_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/coconut_cream.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/coconut_cream.jpg",
       },
     ],
     category: "Others",
@@ -552,8 +552,8 @@ async function run() {
     name: "Cream",
     images: [
       {
-        url: "/images/ingredients/fresh_cream_full.jpg",
-        thumbnailUrl: "/images/ingredients/fresh_cream_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/fresh_cream.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/fresh_cream.jpg",
       },
     ],
     category: "Others",
@@ -563,8 +563,8 @@ async function run() {
     name: "Coffee",
     images: [
       {
-        url: "/images/ingredients/coffee_full.jpg",
-        thumbnailUrl: "/images/ingredients/coffee_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/coffee.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/coffee.jpg",
       },
     ],
     category: "Others",
@@ -575,8 +575,8 @@ async function run() {
     name: "Worcestershire Sauce",
     images: [
       {
-        url: "/images/ingredients/worcestershire_full.jpg",
-        thumbnailUrl: "/images/ingredients/worcestershire_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/worcestershire.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/worcestershire.jpg",
       },
     ],
     category: "Others",
@@ -586,8 +586,8 @@ async function run() {
     name: "Hot Sauce",
     images: [
       {
-        url: "/images/ingredients/hot_sauce_full.jpg",
-        thumbnailUrl: "/images/ingredients/hot_sauce_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/hot_sauce.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/hot_sauce.jpg",
       },
     ],
     category: "Others",
@@ -598,8 +598,8 @@ async function run() {
     name: "Sugar",
     images: [
       {
-        url: "/images/ingredients/sugar_full.jpg",
-        thumbnailUrl: "/images/ingredients/sugar_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/sugar.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/sugar.jpg",
       },
     ],
     category: "Others",
@@ -609,8 +609,8 @@ async function run() {
     name: "Salt",
     images: [
       {
-        url: "/images/ingredients/salt_full.jpg",
-        thumbnailUrl: "/images/ingredients/salt_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/salt.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/salt.jpg",
       },
     ],
     category: "Others",
@@ -620,8 +620,8 @@ async function run() {
     name: "Pepper",
     images: [
       {
-        url: "/images/ingredients/pepper_full.jpg",
-        thumbnailUrl: "/images/ingredients/pepper_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/pepper.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/pepper.jpg",
       },
     ],
     category: "Others",
@@ -631,8 +631,8 @@ async function run() {
     name: "Chilly Powder",
     images: [
       {
-        url: "/images/ingredients/chilly_powder_full.jpg",
-        thumbnailUrl: "/images/ingredients/chilly_powder_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/ingredients/chilly_powder.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/ingredients/chilly_powder.jpg",
       },
     ],
     category: "Others",
@@ -644,8 +644,8 @@ async function run() {
     name: "Aperol Spritz",
     images: [
       {
-        url: "/images/cocktails/aperol_spritz_full.jpg",
-        thumbnailUrl: "/images/cocktails/aperol_spritz_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/aperol_spritz.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/aperol_spritz.jpg",
       },
     ],
     preparation: [
@@ -663,8 +663,8 @@ async function run() {
     name: "Michelada",
     images: [
       {
-        url: "/images/cocktails/michelada_full.jpg",
-        thumbnailUrl: "/images/cocktails/michelada_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/michelada.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/michelada.jpg",
       },
     ],
     preparation: [
@@ -688,8 +688,8 @@ async function run() {
     name: "Margarita",
     images: [
       {
-        url: "/images/cocktails/margarita_full.jpg",
-        thumbnailUrl: "/images/cocktails/margarita_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/margarita.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/margarita.jpg",
       },
     ],
     preparation: [
@@ -708,8 +708,8 @@ async function run() {
     name: "Cuba Libre",
     images: [
       {
-        url: "/images/cocktails/cuba_libre_full.jpg",
-        thumbnailUrl: "/images/cocktails/cuba_libre_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/cuba_libre.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/cuba_libre.jpg",
       },
     ],
     preparation: [
@@ -727,8 +727,8 @@ async function run() {
     name: "Pisco Sour",
     images: [
       {
-        url: "/images/cocktails/pisco_sour_full.jpg",
-        thumbnailUrl: "/images/cocktails/pisco_sour_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/pisco_sour.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/pisco_sour.jpg",
       },
     ],
     preparation: [
@@ -747,8 +747,8 @@ async function run() {
     name: "Piscola",
     images: [
       {
-        url: "/images/cocktails/piscola_full.jpg",
-        thumbnailUrl: "/images/cocktails/piscola_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/piscola.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/piscola.jpg",
       },
     ],
     preparation: [
@@ -765,8 +765,8 @@ async function run() {
     name: "Tequila Sunrise",
     images: [
       {
-        url: "/images/cocktails/tequila_sunrise_full.jpg",
-        thumbnailUrl: "/images/cocktails/tequila_sunrise_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/tequila_sunrise.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/tequila_sunrise.jpg",
       },
     ],
     preparation: [
@@ -786,8 +786,8 @@ async function run() {
     name: "Mojito",
     images: [
       {
-        url: "/images/cocktails/mojito_full.jpg",
-        thumbnailUrl: "/images/cocktails/mojito_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/mojito.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/mojito.jpg",
       },
     ],
     preparation: [
@@ -810,8 +810,8 @@ async function run() {
     name: "Gin & Tonic",
     images: [
       {
-        url: "/images/cocktails/gin_and_tonic_full.jpg",
-        thumbnailUrl: "/images/cocktails/gin_and_tonic_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/gin_and_tonic.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/gin_and_tonic.jpg",
       },
     ],
     preparation: ["In a glass filled with ice cubes, add gin and tonic."],
@@ -825,8 +825,8 @@ async function run() {
     name: "Martini",
     images: [
       {
-        url: "/images/cocktails/martini_full.jpg",
-        thumbnailUrl: "/images/cocktails/martini_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/martini.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/martini.jpg",
       },
     ],
     preparation: [
@@ -845,8 +845,8 @@ async function run() {
     name: "Vodka Martini",
     images: [
       {
-        url: "/images/cocktails/vodka_martini_full.jpg",
-        thumbnailUrl: "/images/cocktails/vodka_martini_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/vodka_martini.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/vodka_martini.jpg",
       },
     ],
     preparation: [
@@ -865,8 +865,8 @@ async function run() {
     name: "Caipirinha",
     images: [
       {
-        url: "/images/cocktails/caipirinha_full.jpg",
-        thumbnailUrl: "/images/cocktails/caipirinha_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/caipirinha.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/caipirinha.jpg",
       },
     ],
     preparation: [
@@ -884,8 +884,8 @@ async function run() {
     name: "Caipiroska",
     images: [
       {
-        url: "/images/cocktails/caipiroska_full.jpg",
-        thumbnailUrl: "/images/cocktails/caipiroska_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/caipiroska.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/caipiroska.jpg",
       },
     ],
     preparation: [
@@ -903,8 +903,8 @@ async function run() {
     name: "Side Car",
     images: [
       {
-        url: "/images/cocktails/side_car_full.jpg",
-        thumbnailUrl: "/images/cocktails/side_car_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/side_car.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/side_car.jpg",
       },
     ],
     preparation: [
@@ -922,8 +922,8 @@ async function run() {
     name: "Long Island Iced Tea",
     images: [
       {
-        url: "/images/cocktails/long_island_full.jpg",
-        thumbnailUrl: "/images/cocktails/long_island_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/long_island.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/long_island.jpg",
       },
     ],
     preparation: [
@@ -946,8 +946,8 @@ async function run() {
     name: "Cosmopolitan",
     images: [
       {
-        url: "/images/cocktails/cosmopolitan_full.jpg",
-        thumbnailUrl: "/images/cocktails/cosmopolitan_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/cosmopolitan.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/cosmopolitan.jpg",
       },
     ],
     preparation: [
@@ -967,8 +967,8 @@ async function run() {
     name: "Daiquiri",
     images: [
       {
-        url: "/images/cocktails/daiquiri_full.jpg",
-        thumbnailUrl: "/images/cocktails/daiquiri_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/daiquiri.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/daiquiri.jpg",
       },
     ],
     preparation: [
@@ -988,8 +988,8 @@ async function run() {
     name: "Mai Tai",
     images: [
       {
-        url: "/images/cocktails/mai_tai_full.jpg",
-        thumbnailUrl: "/images/cocktails/mai_tai_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/mai_tai.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/mai_tai.jpg",
       },
     ],
     preparation: [
@@ -1010,8 +1010,8 @@ async function run() {
     name: "Piña Colada",
     images: [
       {
-        url: "/images/cocktails/pina_colada_full.jpg",
-        thumbnailUrl: "/images/cocktails/pina_colada_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/pina_colada.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/pina_colada.jpg",
       },
     ],
     preparation: [
@@ -1029,8 +1029,8 @@ async function run() {
     name: "Paloma",
     images: [
       {
-        url: "/images/cocktails/paloma_full.jpg",
-        thumbnailUrl: "/images/cocktails/paloma_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/paloma.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/paloma.jpg",
       },
     ],
     preparation: ["Stir together and serve over ice."],
@@ -1045,8 +1045,8 @@ async function run() {
     name: "Black Russian",
     images: [
       {
-        url: "/images/cocktails/black_russian_full.jpg",
-        thumbnailUrl: "/images/cocktails/black_russian_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/black_russian.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/black_russian.jpg",
       },
     ],
     preparation: [
@@ -1063,8 +1063,8 @@ async function run() {
     name: "Bloody Mary",
     images: [
       {
-        url: "/images/cocktails/bloody_mary_full.jpg",
-        thumbnailUrl: "/images/cocktails/bloody_mary_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/bloody_mary.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/bloody_mary.jpg",
       },
     ],
     preparation: [
@@ -1086,8 +1086,8 @@ async function run() {
     name: "Irish Coffee",
     images: [
       {
-        url: "/images/cocktails/irish_coffee_full.jpg",
-        thumbnailUrl: "/images/cocktails/irish_coffee_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/irish_coffee.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/irish_coffee.jpg",
       },
     ],
     preparation: [
@@ -1107,8 +1107,8 @@ async function run() {
     name: "Manhattan",
     images: [
       {
-        url: "/images/cocktails/manhattan_full.jpg",
-        thumbnailUrl: "/images/cocktails/manhattan_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/manhattan.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/manhattan.jpg",
       },
     ],
     preparation: [
@@ -1125,8 +1125,8 @@ async function run() {
     name: "Old Fashioned",
     images: [
       {
-        url: "/images/cocktails/old_fashioned_full.jpg",
-        thumbnailUrl: "/images/cocktails/old_fashioned_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/old_fashioned.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/old_fashioned.jpg",
       },
     ],
     preparation: [
@@ -1146,8 +1146,8 @@ async function run() {
     name: "Rusty Nail",
     images: [
       {
-        url: "/images/cocktails/rusty_nail_full.jpg",
-        thumbnailUrl: "/images/cocktails/rusty_nail_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/rusty_nail.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/rusty_nail.jpg",
       },
     ],
     preparation: [
@@ -1165,8 +1165,8 @@ async function run() {
     name: "Whiskey Sour",
     images: [
       {
-        url: "/images/cocktails/whiskey_sour_full.jpg",
-        thumbnailUrl: "/images/cocktails/whiskey_sour_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/whiskey_sour.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/whiskey_sour.jpg",
       },
     ],
     preparation: [
@@ -1184,8 +1184,8 @@ async function run() {
     name: "Vesper",
     images: [
       {
-        url: "/images/cocktails/vesper_full.jpg",
-        thumbnailUrl: "/images/cocktails/vesper_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/vesper.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/vesper.jpg",
       },
     ],
     preparation: [
@@ -1203,8 +1203,8 @@ async function run() {
     name: "Negroni",
     images: [
       {
-        url: "/images/cocktails/negroni_full.jpg",
-        thumbnailUrl: "/images/cocktails/negroni_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/negroni.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/negroni.jpg",
       },
     ],
     preparation: ["Stir into glass over ice, garnish and serve."],
@@ -1219,8 +1219,8 @@ async function run() {
     name: "John Collins",
     images: [
       {
-        url: "/images/cocktails/john_collins_full.jpg",
-        thumbnailUrl: "/images/cocktails/john_collins_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/john_collins.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/john_collins.jpg",
       },
     ],
     preparation: [
@@ -1241,8 +1241,8 @@ async function run() {
     name: "Mimosa",
     images: [
       {
-        url: "/images/cocktails/mimosa_full.jpg",
-        thumbnailUrl: "/images/cocktails/mimosa_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/mimosa.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/mimosa.jpg",
       },
     ],
     preparation: [
@@ -1258,8 +1258,8 @@ async function run() {
     name: "Americano",
     images: [
       {
-        url: "/images/cocktails/americano_full.jpg",
-        thumbnailUrl: "/images/cocktails/americano_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/americano.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/americano.jpg",
       },
     ],
     preparation: [
@@ -1277,8 +1277,8 @@ async function run() {
     name: "Sangria",
     images: [
       {
-        url: "/images/cocktails/sangria_full.jpg",
-        thumbnailUrl: "/images/cocktails/sangria_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/sangria.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/sangria.jpg",
       },
     ],
     preparation: [
@@ -1299,8 +1299,8 @@ async function run() {
     name: "Screwdriver",
     images: [
       {
-        url: "/images/cocktails/screwdriver_full.jpg",
-        thumbnailUrl: "/images/cocktails/screwdriver_thumb.jpg",
+        url: "https://res.cloudinary.com/ygoldfrid/image/upload/v1595180738/cocktails/screwdriver.jpg",
+        thumbnailUrl: "https://res.cloudinary.com/ygoldfrid/image/upload/t_thumb/v1595180738/cocktails/screwdriver.jpg",
       },
     ],
     preparation: ["Mix in a highball glass with ice.", "Garnish and serve."],
